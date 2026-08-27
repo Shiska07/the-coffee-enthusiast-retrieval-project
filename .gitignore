@@ -1,0 +1,92 @@
+# Python                     
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Images
+*.jpg
+*.jpeg
+*.png
+*.tif
+*.tiff
+*.bmp
+*.webp
+*.gif
+
+# Data files
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.xlsx
+*.xls
+*.jsonl
+
+# Dataset folders
+data/
+datasets/
+raw_data/
+processed_data/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+*.dump
+
+# PostgreSQL local data directories
+postgres-data/
+pgdata/
+database/
+db_data/
+
+# Logs
+*.log
+logs/
+log/
+
+# Model / ML artifacts
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+checkpoints/
+models/
+weights/
+runs/
+  
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary / cache files
+tmp/
+temp/
+.cache/
+*.tmp
+
+
