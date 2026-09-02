@@ -41,20 +41,25 @@ class Settings(BaseSettings):
     
     
     # --- Retrieval ---------------------------------------------------------
-    RETRIEVAL_CANDIDATE_k: int = 20  # number of candidate documents to retrieve for each query (gets re-ranked by cross-encoder)
+    RETRIEVAL_CANDIDATE_k: int = 5  # number of candidate documents to retrieve for each query (gets re-ranked by cross-encoder)
     RETRIEVAL_SCORE_THRESHOLD: float = 0.75 # pre-filter cutoff on raw similarity score (0-1) for candidate documents before re-ranking
     RETRIEVAL_TOP_K: int = 5  # number of top documents to retrieve for each query post re-ranking
     MAX_RETREVAL_ATTEMPTS: int = 3  # number of attempts to retrieve documents before giving up
     
+    
     # --- Relevance Scoring/Grading ---------------------------------------------------------
     # Stage 1 (primary signal): cross-encoder reranks RETRIEVAL_CANDIDATE_K candidates down
-    # to RETRIEVAL_TOP_K. English-only, purpose-trained on MS MARCO, ~22.7M params — cheap enough to run on CPU for every query.
+    # to RETRIEVAL_TOP_K. English-only, purpose-trained on MS MARCO, ~22.7M params — cheap enough to run on CPU for every
+    # # Loaded via sentence-transformers' CrossEncoder; auto-downloads from HF Hub to
+    # ~/.cache/huggingface/hub on first use — no manual setup.query.
     RERANKER_MODEL: str = "cross-encoder/ms-marco-MiniLM-L6-v2"
     RERANKER_DEVICE: str = "cpu"
+    
     
     # Stage 2 (optional corrective gate): LLM binary pass/fail grade on the reranked top-k, run on
     # GENERATION_MODEL with structured output (relevant / not relevant per chunk).
     RELEVANCE_GRADE_PASS_RATIO: float = 0.5  # >= half of top-k graded relevant = pass
+    
     
     # --- Web search fallback ---------------------------------------------------------
     TAVILY_API_KEY: str | None = Field(default=None)
@@ -67,6 +72,7 @@ class Settings(BaseSettings):
     ]
     WEB_SEARCH_MAX_RESULTS: int = 3
     
+    
     # --- Generation ---------------------------------------------------------
     GENERATION_PROVIDER: str = "ollama"
     GENERATION_MODEL: str = "mistral:7b-instruct-q4_K_M"
@@ -74,10 +80,12 @@ class Settings(BaseSettings):
     GENERATION_TEMPERATURE: float = 0.1
     GENERATION_MAX_TOKENS: int = 512
     
+    
     # --- Hallucination detection -----------------------------------------------------
     # Primary: local download, free, prupose-built factual-consistency classifier (Vectara HHEM-2.1).
     HALLUCINATION_MODEL: str = "vectara/hallucination_evaluation_model"
     HALLUCINATION_SCORE_THRESHOLD: float = 0.65  # below this -> flag answer low-confidence
+    
     
     # Optional tie-breaker: only invoked when HHEM's score falls in the ambiguous band
     # below, not on every request. Requires ANTHROPIC_API_KEY.
