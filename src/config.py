@@ -27,18 +27,17 @@ class Settings(BaseSettings):
     
     # --- paths ---
     PROJECT_ROOT: Path = PROJECT_ROOT
-    SQLITE_PATH = PROJECT_ROOT / "db" / "coffee_enthusiast.db"  # path to the SQLite database file
-    VECTOR_STORE_DIR = PROJECT_ROOT / "db" / "vector_store"  # path to the vector store directory
+    SQLITE_PATH: Path = PROJECT_ROOT / "db" / "coffee_reviews.db"  # path to the SQLite database file
+    VECTOR_STORE_DIR: Path = PROJECT_ROOT / "vector_store"  # path to the vector store directory
     '''
     Add evals and test directories to the project root.
     '''
     
     # --- Embeddings ---------------------------------------------------------
-    # Provider is fixed to OpenAI for now; the model is swappable.
+    OPENAI_API_KEY: str
     EMBEDDING_MODEL: str = "text-embedding-3-small"  # 1536-dim, ~$0.02/1M tokens
     EMBEDDING_BATCH_SIZE: int = 256
     CHROMA_COLLECTION: str = "coffee_reviews"
-    OPENAI_API_KEY: str | None = Field(default=None)
     
     
     # --- Retrieval ---------------------------------------------------------

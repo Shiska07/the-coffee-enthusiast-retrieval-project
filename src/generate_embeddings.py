@@ -35,7 +35,7 @@ def _clean(value):
 
 def load_rows(limit: int | None = None) -> list[sqlite3.Row]:
     query = QUERY + (f" LIMIT {limit}" if limit else "")
-    with sqlite3.connect(settings.db_path) as conn:
+    with sqlite3.connect(settings.SQLITE_PATH) as conn:
         conn.row_factory = sqlite3.Row
         return conn.execute(query).fetchall()
     
@@ -74,7 +74,7 @@ def main(rebuild: bool = False, limit: int | None = None) -> None:
         store.reset()
 
     rows = load_rows(limit=limit)
-    print(f"Loaded {len(rows)} reviews from {settings.db_path}")
+    print(f"Loaded {len(rows)} reviews from {settings.SQLITE_PATH}.")
 
     documents = [build_document(row) for row in rows]
     store.upsert(documents)
