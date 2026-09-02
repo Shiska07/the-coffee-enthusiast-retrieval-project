@@ -28,28 +28,21 @@ class Settings(BaseSettings):
     # --- paths ---
     PROJECT_ROOT: Path = PROJECT_ROOT
     SQLITE_PATH = PROJECT_ROOT / "db" / "coffee_enthusiast.db"  # path to the SQLite database file
-    VECTOR_STORE_PATH = PROJECT_ROOT / "db" / "vector_store"  # path to the vector store directory
+    VECTOR_STORE_DIR = PROJECT_ROOT / "db" / "vector_store"  # path to the vector store directory
     '''
     Add evals and test directories to the project root.
     '''
-    
     
     # --- Embeddings ---------------------------------------------------------
     # Provider is fixed to OpenAI for now; the model is swappable.
     EMBEDDING_MODEL: str = "text-embedding-3-small"  # 1536-dim, ~$0.02/1M tokens
     EMBEDDING_BATCH_SIZE: int = 256
+    CHROMA_COLLECTION: str = "coffee_reviews"
     OPENAI_API_KEY: str | None = Field(default=None)
     
-    # --- Generation ---------------------------------------------------------
-        # --- Generation ---------------------------------------------------------
-    GENERATION_PROVIDER: str = "ollama"
-    GENERATION_MODEL: str = "mistral:7b-instruct-q4_K_M"
-    GENERATION_BASE_URL: str = "http://localhost:11434"
-    GENERATION_TEMPERATURE: float = 0.1
-    GENERATION_MAX_TOKENS: int = 512
     
     # --- Retrieval ---------------------------------------------------------
-    RETREIVAL_CANDIDATE_k: int = 20  # number of candidate documents to retrieve for each query (gets re-ranked by cross-encoder)
+    RETRIEVAL_CANDIDATE_k: int = 20  # number of candidate documents to retrieve for each query (gets re-ranked by cross-encoder)
     RETRIEVAL_SCORE_THRESHOLD: float = 0.75 # pre-filter cutoff on raw similarity score (0-1) for candidate documents before re-ranking
     RETRIEVAL_TOP_K: int = 5  # number of top documents to retrieve for each query post re-ranking
     MAX_RETREVAL_ATTEMPTS: int = 3  # number of attempts to retrieve documents before giving up
@@ -74,6 +67,13 @@ class Settings(BaseSettings):
         "jameshoffmann.co.uk",
     ]
     WEB_SEARCH_MAX_RESULTS: int = 3
+    
+    # --- Generation ---------------------------------------------------------
+    GENERATION_PROVIDER: str = "ollama"
+    GENERATION_MODEL: str = "mistral:7b-instruct-q4_K_M"
+    GENERATION_BASE_URL: str = "http://localhost:11434"
+    GENERATION_TEMPERATURE: float = 0.1
+    GENERATION_MAX_TOKENS: int = 512
     
     # --- Hallucination detection -----------------------------------------------------
     # Primary: local download, free, prupose-built factual-consistency classifier (Vectara HHEM-2.1).
