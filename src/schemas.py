@@ -3,6 +3,8 @@
 
 from __future__ import annotations
 from datetime import date
+
+from langchain_core.documents import Document
 from pydantic import BaseModel, HttpUrl
 
 # ----  Embedding stage -------------------------------------------------------------
@@ -26,3 +28,5 @@ class ReviewMetadata(BaseModel):
     body: float | None = None
     flavor: float | None = None
     aftertaste: float | None = None
+    
+    
