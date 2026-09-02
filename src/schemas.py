@@ -5,9 +5,10 @@ from __future__ import annotations
 from datetime import date
 
 from langchain_core.documents import Document
-from pydantic import BaseModel, HttpUrl
+from pydantic import BaseModel, Field, HttpUrl
 
 # ----  Embedding stage -------------------------------------------------------------
+
 
 class ReviewMetadata(BaseModel):
     """Metadata for a single coffee review."""
@@ -29,4 +30,15 @@ class ReviewMetadata(BaseModel):
     flavor: float | None = None
     aftertaste: float | None = None
     
+    
+class AnswerResult(BaseModel):
+    """A single answer returned by the LLM generation stage."""
+
+    question: str
+    answer: str
+    contexts: list[Document] = Field(default_factory=list)  # which retrieved documents were used to generate the answer
+    attempts: int = 1
+    used_web_search: bool = False  # whether the answer was generated using web search fallback
+    low_confidence: bool = False  # whether the answer was flagged as low-confidence by the hallucination detection stage
+    query_strategy: str = "raw"  # which query strategy was used to retrieve documents for this answer
     
