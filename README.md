@@ -1,3 +1,13 @@
+# Why Coffee + RAG?
+I drink an unreasonable amount of coffee, and somewhere between my third and fourth cup of the day, being a "genuinely curious hobbyist" slowly turned into "I want to open a coffee shop someday."
+
+This project is where that interest collided with something else I wanted to do: implement a production-focused sophisticated RAG (retrieval-augmented generation) by building something substantial, rather than following another toy tutorial on a dataset I don't care about. So instead of pointing a retrieval pipeline at Wikipedia or a random set of PDFs, I pointed it at a dataset of coffee reviews — something I already enjoy and want to learn more about.
+
+Best case, I come out of this knowing a lot more about both good coffee and how retrieval pipelines actually work. Worst case, I become even more opinionated about coffee.
+
+I'm building the project incrementally, one stage at a time, rather than trying to build the entire system at once. This README reflects what's actually implemented so far, followed by what I plan to add next.
+
+
 # TheCoffeeEnthusiast
 
 A retrieval-augmented question-answering system built over a dataset of coffee reviews.
@@ -66,5 +76,4 @@ Roughly in this order:
 - a simple chat interface wrapping the finished pipeline
 
 ## Built with
-
 LangChain, LangGraph, Chroma, Ollama (Mistral), OpenAI embeddings.
