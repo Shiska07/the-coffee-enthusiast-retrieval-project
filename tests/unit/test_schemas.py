@@ -20,7 +20,7 @@ from datetime import date
 import pytest
 from pydantic import ValidationError
 
-from src.schemas import AnswerResult, ReviewMetadata
+from coffee_rag.schemas import AnswerResult, ReviewMetadata
 
 
 # ---------------------------------------------------------------------------

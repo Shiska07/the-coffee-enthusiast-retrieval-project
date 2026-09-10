@@ -17,8 +17,8 @@ from __future__ import annotations
 
 from langchain_core.documents import Document
 
-from src.generate_embeddings import _clean, build_document
-from src.retrieval.vector_store import _batched
+from scripts.generate_embeddings import _clean, build_document
+from coffee_rag.retrieval.vector_store import _batched
 
 
 # ---------------------------------------------------------------------------

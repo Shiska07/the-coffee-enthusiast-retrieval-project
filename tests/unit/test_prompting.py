@@ -20,8 +20,8 @@ from __future__ import annotations
 
 from langchain_core.documents import Document
 
-from src.config import settings
-from src.generation.prompting import (
+from coffee_rag.config import settings
+from coffee_rag.generation.prompting import (
     PROMPT_OVERHEAD_TOKENS,
     SYSTEM_PROMPT,
     _join_natural,
@@ -30,7 +30,7 @@ from src.generation.prompting import (
     count_tokens,
     format_context_block,
 )
-from src.schemas import ReviewMetadata
+from coffee_rag.schemas import ReviewMetadata
 
 
 # ---------------------------------------------------------------------------
