@@ -38,19 +38,19 @@ This README reflects what's implemented so far, followed by what's planned next.
 
 ## Embeddings & Vector Store
 
-4. `src/generate_embeddings.py` : builds the combined per-review text (per the chunking
+4. `scripts/generate_embeddings.py` : builds the combined per-review text (per the chunking
    strategy decided above), embeds it with OpenAI's `text-embedding-3-small`, and writes
    it into a persistent Chroma vector store — each vector is keyed by `review_uid` so
    results can be joined back to the structured SQLite metadata at query time.
 
 ## Baseline Retrieval + Generation Pipeline
 
-5. `src/retrieval/vector_store.py` : wraps the Chroma store with a similarity-search
+5. `src/coffee_rag/retrieval/vector_store.py` : wraps the Chroma store with a similarity-search
    interface used at query time.
-6. `src/generation/prompting.py` : builds the prompt sent to the LLM, combining each
+6. `src/coffee_rag/generation/prompting.py` : builds the prompt sent to the LLM, combining each
    retrieved review's text with a natural-language sentence generated from its metadata
    (roaster, origin, roast, ratings), so the model reasons over more than a bare passage.
-7. `src/generation/generator.py` : runs the prompt through a locally-hosted Mistral model
+7. `src/coffee_rag/generation/generator.py` : runs the prompt through a locally-hosted Mistral model
    (via Ollama) and returns a structured answer.
 
 Together, steps 5–7 are the current end-to-end pipeline: a question comes in, the most
