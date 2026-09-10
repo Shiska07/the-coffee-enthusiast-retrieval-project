@@ -12,14 +12,19 @@ from langchain_core.documents import Document
 from langchain_core.output_parsers import StrOutputParser
 from langchain_ollama import ChatOllama
 
-from src.config import settings
-from src.generation.prompting import GENERATION_PROMPT, format_context_block
-from src.schemas import AnswerResult
+from coffee_rag.config import settings
+from coffee_rag.generation.prompting import (
+    GENERATION_PROMPT,
+    PROMPT_OVERHEAD_TOKENS,
+    build_context,
+    count_tokens,
+)
+from coffee_rag.schemas import AnswerResult
 
 class Generator:
-    def _init__(self, llm: ChatOllama | None = None) -> None:
+    def __init__(self, llm: ChatOllama | None = None) -> None:
         self.llm = llm or ChatOllama(
-            model=settings.GENERATION_MODEL,
+        model=settings.GENERATION_MODEL,
             base_url=settings.GENERATION_BASE_URL,
             temperature=settings.GENERATION_TEMPERATURE,
             max_tokens=settings.GENERATION_MAX_TOKENS,
@@ -30,18 +35,24 @@ class Generator:
         
         """
         Documents carry metadata that can give the LLM additional context beyond the raw
-        review text. 'format_context_block' builds a string combining the document's
-        page_content with a natural-language sentence generated from its metadata.
-        That combination is the full context fed per document to the LLM. For this case this is the coffee
-        roast, level, scoring on acidity, flavor, etc. and other relevant information that can help the LLM answer the
-        question more accurately.
+        review text. 'build_context' formats each document (page_content + a
+        natural-language sentence built from its metadata: roast level, acidity /
+        flavor scores, etc.) and packs as many WHOLE documents as fit the token
+        budget (CONTEXT_MAX_TOKENS), dropping the lowest-ranked ones rather than truncating any.
+
+        The budget is reduced up front by the fixed prompt overhead (system
+        prompt + template scaffolding) and the question, so documents only
+        compete for the space that actually remains.
         """
-        context = "\n\n".join(format_context_block(doc) for doc in documents)
+        context, used = build_context(
+            documents,
+            reserve_tokens=PROMPT_OVERHEAD_TOKENS + count_tokens(question),
+        )
         result = self.chain.invoke({"question": question, "context": context})
         return AnswerResult(
-            answer=result, 
-            question=question, 
-            contexts=documents
+            answer=result,
+            question=question,
+            contexts=used,
         )
     
     

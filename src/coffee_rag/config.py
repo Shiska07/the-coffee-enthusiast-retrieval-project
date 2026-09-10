@@ -6,7 +6,7 @@ runs without any `.env` for everything except the API keys.
 
 Import the singleton:
 
-    from src.config import settings
+    from coffee_rag.config import settings
     settings.SQLITE_PATH
 """
 
@@ -16,7 +16,8 @@ from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 # Project root = the directory that contains `src/`, `db/`, `data/`, ...
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+# This file lives at `src/coffee_rag/config.py`, so the root is three levels up.
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 class Settings(BaseSettings):    
     model_config = SettingsConfigDict(
@@ -78,7 +79,8 @@ class Settings(BaseSettings):
     GENERATION_MODEL: str = "mistral:7b-instruct-q4_K_M"
     GENERATION_BASE_URL: str = "http://localhost:11434"
     GENERATION_TEMPERATURE: float = 0.1
-    GENERATION_MAX_TOKENS: int = 512
+    GENERATION_MAX_TOKENS: int = 1024
+    CONTEXT_MAX_TOKENS: int = 32000  # max tokens to include in the prompt context (retrieved docs + user query)
     
     
     # --- Hallucination detection -----------------------------------------------------
@@ -102,16 +104,5 @@ class Settings(BaseSettings):
     
  
 settings = Settings()
-   
-def combined_text(desc_1: str | None, desc_3: str | None, desc_2_clean: str | None) -> str:
-    """Build the single passage embedded per review.
-
-    Chunking strategy decided in ``notebooks/03_text_analysis.ipynb``: concatenate
-    all three description fields into one passage. Order matches the notebook
-    (``desc_1`` tasting notes, ``desc_3`` takeaway, ``desc_2_clean`` sourcing/
-    business context).
-    """
-    parts = [(desc_1 or "").strip(), (desc_3 or "").strip(), (desc_2_clean or "").strip()]
-    return "\n\n".join(p for p in parts if p)
 
     

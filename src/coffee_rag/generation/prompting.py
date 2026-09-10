@@ -5,9 +5,23 @@ to provide more context to the generator.
 
 """
 
+from typing import Callable
+
+import tiktoken
 from langchain_core.documents import Document
 from langchain_core.prompts import ChatPromptTemplate
-from src.schemas import ReviewMetadata
+
+from coffee_rag.config import settings
+from coffee_rag.schemas import ReviewMetadata
+
+# Mistral tokenises with SentencePiece, not cl100k, so this is an approximation
+# (typically within ~10-15% for English prose) used only for budgeting. Pass a
+# real tokenizer via `token_counter` where exactness matters.
+_ENCODER = tiktoken.get_encoding("cl100k_base")
+
+
+def count_tokens(text: str) -> int:
+    return len(_ENCODER.encode(text))
 
 SYSTEM_PROMPT = """
 
@@ -29,6 +43,9 @@ GENERATION_PROMPT = ChatPromptTemplate.from_messages(
         ("human", "Context:\n{context}\n\nQuestion:\n{question}"),
     ]
 )
+
+# Fixed token cost of the prompt itself -- SYSTEM_PROMPT plus the
+PROMPT_OVERHEAD_TOKENS = count_tokens(GENERATION_PROMPT.format(context="", question=""))
 
 
 def format_context_block(doc: Document) -> str:
@@ -90,3 +107,40 @@ def _join_natural(items: list[str]) -> str:
     if len(items) <= 1:
         return items[0] if items else ""
     return ", ".join(items[:-1]) + ", and " + items[-1]
+
+
+def build_context(
+    documents: list[Document],
+    max_tokens: int | None = None,
+    reserve_tokens: int = 0,
+    token_counter: Callable[[str], int] = count_tokens,
+) -> tuple[str, list[Document]]:
+    """Format `documents` into the prompt's context block, keeping only WHOLE
+    documents that fit the token budget.
+
+    `documents` is assumed to be pre-sorted by relevance (reranker output), so
+    we fill greedily from the top and stop at the first document that would
+    push us over `max_tokens - reserve_tokens` (reserve room for the question
+    and system prompt). A document is never split.
+
+    Returns `(context_string, kept_documents)` -- `kept_documents` is what was
+    actually sent, so the caller can record that on the AnswerResult.
+    """
+    
+    budget = (max_tokens or settings.CONTEXT_MAX_TOKENS) - reserve_tokens
+
+    blocks: list[str] = []
+    kept: list[Document] = []
+    used = 0
+    sep_cost = 0  # no separator before the first block
+    for doc in documents:
+        block = format_context_block(doc)
+        cost = sep_cost + token_counter(block)
+        if kept and used + cost > budget:
+            break
+        blocks.append(block)
+        kept.append(doc)
+        used += cost
+        sep_cost = token_counter("\n\n")
+
+    return "\n\n".join(blocks), kept
