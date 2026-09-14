@@ -1,5 +1,5 @@
 # Why Coffee + RAG?
-I drink an unreasonable amount of coffee, and somewhere between my third and fourth cup of the day, being a "genuinely curious hobbyist" slowly turned into "I want to open a coffee shop someday."
+I drink an unreasonable amount of coffee, and somewhere between my third and fourth cup of the day, being a "curious hobbyist" slowly turned into "I want to open a coffee shop someday."
 
 This project is where that interest collided with something else I wanted to do: implement a production-focused sophisticated RAG (retrieval-augmented generation) by building something substantial, rather than following another toy tutorial on a dataset I don't care about. So instead of pointing a retrieval pipeline at Wikipedia or a random set of PDFs, I pointed it at a dataset of coffee reviews — something I already enjoy and want to learn more about.
 
@@ -59,7 +59,7 @@ retrieved context — no reranking, relevance grading, or retry logic yet. This
 intentionally "boring" baseline exists as a working reference point that every later
 improvement gets measured against.
 
-## What's Next
+## Upcoming Implementations
 
 Roughly in this order:
 
