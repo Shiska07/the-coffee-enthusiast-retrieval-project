@@ -43,8 +43,7 @@ class Settings(BaseSettings):
     
     # --- Retrieval ---------------------------------------------------------
     RETRIEVAL_CANDIDATE_k: int = 5  # number of candidate documents to retrieve for each query (gets re-ranked by cross-encoder)
-    RETRIEVAL_SCORE_THRESHOLD: float = 0.75 # pre-filter cutoff on raw similarity score (0-1) for candidate documents before re-ranking
-    RETRIEVAL_TOP_K: int = 5  # number of top documents to retrieve for each query post re-ranking
+    RETRIEVAL_SCORE_THRESHOLD: float = 0.5 # pre-filter cutoff on raw similarity score (0-1) for candidate documents before re-ranking
     MAX_RETREVAL_ATTEMPTS: int = 3  # number of attempts to retrieve documents before giving up
     
     
@@ -55,6 +54,7 @@ class Settings(BaseSettings):
     # ~/.cache/huggingface/hub on first use — no manual setup.query.
     RERANKER_MODEL: str = "cross-encoder/ms-marco-MiniLM-L6-v2"
     RERANKER_DEVICE: str = "cpu"
+    RETRIEVAL_TOP_K: int = 5  # number of top documents to retrieve for each query post re-ranking
     
     
     # Stage 2 (optional corrective gate): LLM binary pass/fail grade on the reranked top-k, run on
@@ -79,23 +79,32 @@ class Settings(BaseSettings):
     GENERATION_MODEL: str = "mistral:7b-instruct-q4_K_M"
     GENERATION_BASE_URL: str = "http://localhost:11434"
     GENERATION_TEMPERATURE: float = 0.1
-    GENERATION_MAX_TOKENS: int = 1024
+    GENERATION_MAX_TOKENS: int = 2048
     CONTEXT_MAX_TOKENS: int = 32000  # max tokens to include in the prompt context (retrieved docs + user query)
+    QUESTION_RESERVE_TOKENS: int = 512  # tokens held back for the user question when packing context (system prompt is already subtracted via PROMPT_OVERHEAD_TOKENS)
     
     
-    # --- Hallucination detection -----------------------------------------------------
-    # Primary: local download, free, prupose-built factual-consistency classifier (Vectara HHEM-2.1).
-    HALLUCINATION_MODEL: str = "vectara/hallucination_evaluation_model"
-    HALLUCINATION_SCORE_THRESHOLD: float = 0.65  # below this -> flag answer low-confidence
+    # --- Hallucination / groundedness detection ------------------------------------
+    
+    # Thresholds interpretation:
+    # raw ≥ 0.65 → the model is confidently saying "supported," accept as-is.
+    # 0.35 ≤ raw < 0.65 → the model is near the coin-flip line (not confident in either direction, use LLM as a judge).
+    # raw < 0.35 → the model is confidently saying "not supported," flag it as a likely hallucination directly, 
+    # without using the LLM call.
     
     
-    # Optional tie-breaker: only invoked when HHEM's score falls in the ambiguous band
-    # below, not on every request. Requires ANTHROPIC_API_KEY.
-    HALLUCINATION_TIEBREAKER_ENABLED: bool = False
-    HALLUCINATION_TIEBREAKER_MODEL: str = "claude-haiku-4-5"
-    HALLUCINATION_AMBIGUOUS_LOW: float = 0.3
-    HALLUCINATION_AMBIGUOUS_HIGH: float = 0.7
-    ANTHROPIC_API_KEY: str | None = Field(default=None)
+    # Primary: MiniCheck (Flan-T5-Large, ~0.8B) 
+    # claim-vs-context factual-support classifier. A raw support probability in [0, 1] = P
+    HALLUCINATION_MODEL: str = "flan-t5-large"
+    HALLUCINATION_SCORE_THRESHOLD: float = 0.65  # raw support prob below this -> low-confidence
+
+    # Optional LLM tie-breaker: invoked ONLY when the raw support probability lands
+    # in the ambiguous band below -- not on every request. Reuses OPENAI_API_KEY.
+    HALLUCINATION_TIEBREAKER_ENABLED: bool = True
+    HALLUCINATION_TIEBREAKER_MODEL: str = "gpt-4.1-mini"
+    HALLUCINATION_AMBIGUOUS_LOW: float = 0.35
+    HALLUCINATION_AMBIGUOUS_HIGH: float = 0.65
+
     
     # --- Logging & Tracing ---------------------------------------------------------
     LANGSMITH_TRACING: bool = False
