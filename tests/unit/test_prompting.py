@@ -1,4 +1,4 @@
-"""Unit tests for prompt construction (``src/generation/prompting.py``).
+"""Unit tests for prompt construction (``src/coffee_rag/generation/prompting.py``).
 
 String-building and token budgeting -- no LLM call.
 These functions decide exactly what text reaches the generator, so the tests
@@ -18,12 +18,13 @@ target the ways that can go wrong:
 
 from __future__ import annotations
 
+import pytest
 from langchain_core.documents import Document
 
 from coffee_rag.config import settings
+from coffee_rag.generation import prompting
 from coffee_rag.generation.prompting import (
     PROMPT_OVERHEAD_TOKENS,
-    SYSTEM_PROMPT,
     _join_natural,
     _metadata_sentence,
     build_context,
@@ -31,7 +32,7 @@ from coffee_rag.generation.prompting import (
     format_context_block,
 )
 from coffee_rag.schemas import ReviewMetadata
-
+from coffee_rag.templates import GENERATOR_SYSTEM_PROMPT
 
 # ---------------------------------------------------------------------------
 # _join_natural -- ", ".join with an Oxford "and" before the last item
@@ -112,13 +113,13 @@ class TestMetadataSentence:
 #
 # The reranker hands generate() a relevance-ordered list; some queries retrieve
 # more text than the model's window holds. build_context must pack only WHOLE
-# documents that fit -- never half a review -- and report which it kept.
+# documents that fit -- never half a review.
 #
-# A fake token_counter (1 token == 1 char) makes the budget math deterministic.
+# The budget is derived internally (CONTEXT_MAX_TOKENS - PROMPT_OVERHEAD_TOKENS
+# - QUESTION_RESERVE_TOKENS). The fixture below stubs the counter to 1 token ==
+# 1 char and zeroes the two fixed reservations, so a test can pin the effective
+# document budget directly via CONTEXT_MAX_TOKENS.
 # ---------------------------------------------------------------------------
-
-
-_char_count = len
 
 
 def _doc(uid: str, text: str) -> Document:
@@ -127,60 +128,64 @@ def _doc(uid: str, text: str) -> Document:
     return Document(id=uid, page_content=text, metadata={})
 
 
+@pytest.fixture
+def set_budget(monkeypatch):
+    monkeypatch.setattr(prompting, "count_tokens", len)
+    monkeypatch.setattr(prompting, "PROMPT_OVERHEAD_TOKENS", 0)
+    monkeypatch.setattr(settings, "QUESTION_RESERVE_TOKENS", 0)
+
+    def _set(n_tokens: int) -> None:
+        monkeypatch.setattr(settings, "CONTEXT_MAX_TOKENS", n_tokens)
+
+    return _set
+
+
 class TestBuildContext:
-    def test_all_documents_fit_and_are_joined_with_blank_line(self):
+    def test_all_documents_fit_and_are_joined_with_blank_line(self, set_budget):
+        set_budget(100)
         docs = [_doc("a", "AAAA"), _doc("b", "BBBB")]
 
-        context, kept = build_context(docs, max_tokens=100, token_counter=_char_count)
+        assert build_context(docs) == "AAAA\n\nBBBB"
 
-        assert context == "AAAA\n\nBBBB"
-        assert [d.id for d in kept] == ["a", "b"]
-
-    def test_lowest_ranked_documents_are_dropped_when_over_budget(self):
+    def test_lowest_ranked_documents_are_dropped_when_over_budget(self, set_budget):
         """Order is relevance-descending, so the tail is what gets cut."""
+        set_budget(25)
         docs = [_doc("a", "A" * 10), _doc("b", "B" * 10), _doc("c", "C" * 10)]
 
-        # budget 25: "A"*10 + "\n\n"(2) + "B"*10 = 22 ok; +2+10 = 34 > 25 -> drop c
-        context, kept = build_context(docs, max_tokens=25, token_counter=_char_count)
+        # "A"*10 + "\n\n"(2) + "B"*10 = 22 ok; +2+10 = 34 > 25 -> drop c
+        context = build_context(docs)
 
-        assert [d.id for d in kept] == ["a", "b"]
+        assert context == "A" * 10 + "\n\n" + "B" * 10
         assert "C" not in context
 
-    def test_whole_documents_only_no_partial_text(self):
+    def test_whole_documents_only_no_partial_text(self, set_budget):
+        set_budget(14)
         docs = [_doc("a", "A" * 10), _doc("b", "B" * 10)]
-
-        context, kept = build_context(docs, max_tokens=14, token_counter=_char_count)
 
         # "a" (10) fits; adding "\n\n"+"b" would hit 22 > 14 -> stop.
         # "b" must be entirely absent, not clipped.
-        assert [d.id for d in kept] == ["a"]
-        assert context == "A" * 10
+        assert build_context(docs) == "A" * 10
 
-    def test_top_document_is_kept_even_if_it_alone_exceeds_budget(self):
+    def test_top_document_is_kept_even_if_it_alone_exceeds_budget(self, set_budget):
         """Sending no context is worse than sending an over-long top hit."""
+        set_budget(10)
         docs = [_doc("a", "A" * 100), _doc("b", "B" * 5)]
 
-        context, kept = build_context(docs, max_tokens=10, token_counter=_char_count)
+        assert build_context(docs) == "A" * 100
 
-        assert [d.id for d in kept] == ["a"]
-        assert context == "A" * 100
-
-    def test_reserve_tokens_shrinks_the_effective_budget(self):
+    def test_question_reserve_shrinks_the_effective_budget(self, set_budget, monkeypatch):
+        set_budget(25)
+        monkeypatch.setattr(settings, "QUESTION_RESERVE_TOKENS", 10)
         docs = [_doc("a", "A" * 10), _doc("b", "B" * 10)]
 
         # raw budget 25 fits both (22); reserving 10 for the question drops the
         # effective budget to 15 -> only "a" fits.
-        _, kept = build_context(
-            docs, max_tokens=25, reserve_tokens=10, token_counter=_char_count
-        )
+        assert build_context(docs) == "A" * 10
 
-        assert [d.id for d in kept] == ["a"]
+    def test_empty_document_list_yields_empty_context(self, set_budget):
+        set_budget(100)
 
-    def test_empty_document_list_yields_empty_context(self):
-        context, kept = build_context([], max_tokens=100, token_counter=_char_count)
-
-        assert context == ""
-        assert kept == []
+        assert build_context([]) == ""
 
 
 # ---------------------------------------------------------------------------
@@ -198,7 +203,7 @@ class TestPromptOverhead:
     def test_overhead_exceeds_the_system_prompt_alone(self):
         """It's the system prompt PLUS the 'Context:/Question:' scaffolding, so
         it must be strictly larger than the system prompt by itself."""
-        assert PROMPT_OVERHEAD_TOKENS > count_tokens(SYSTEM_PROMPT)
+        assert PROMPT_OVERHEAD_TOKENS > count_tokens(GENERATOR_SYSTEM_PROMPT)
 
     def test_overhead_leaves_a_usable_document_budget(self):
         """Guardrail against a misconfigured CONTEXT_MAX_TOKENS: the fixed
