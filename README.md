@@ -63,16 +63,15 @@ improvement gets measured against.
 
 Roughly in this order:
 
+- a cross-encoder(ms-marco-MiniLM-L6-v2) for re-ranking retrieved documents
+- a local hallucination grader(Minicheck) for checking response groundedness with an
+  LLM(gpt-4.1-mini) as a judge API call fallback for low-confidence answers 
 - an evaluation harness (RAGAS metrics against a curated question set) to measure
   retrieval and answer quality before adding more complexity
-- alternate query construction strategies (multi-query, step-back, HyDE) to try when
-  the first retrieval attempt comes up short
-- a cross-encoder reranker and an LLM relevance grader, with a retry loop that switches
-  strategies when retrieved context isn't good enough
 - a web search fallback, domain-restricted to coffee-related sources, for questions the
   review dataset can't answer
-- a hallucination/groundedness check on generated answers using a local classifier
-  (Vectara HHEM), surfacing a low-confidence flag rather than retrying silently
+- alternate query construction strategies (multi-query, step-back, HyDE) to try when
+  the first retrieval attempt comes up short
 - a simple chat interface wrapping the finished pipeline
 
 ## Built with
