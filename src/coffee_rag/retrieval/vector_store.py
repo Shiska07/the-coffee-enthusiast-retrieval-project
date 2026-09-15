@@ -21,7 +21,6 @@ from langchain_core.documents import Document
 from langchain_openai import OpenAIEmbeddings
 
 from coffee_rag.config import settings
-from coffee_rag.schemas import ReviewMetadata
 
 def _batched(seq: Sequence, n: int) -> Iterable[Sequence]:
     for i in range(0, len(seq), n):
@@ -68,34 +67,10 @@ class VectorStore:
         for batch in _batched(documents, batch_size):
             self._store.add_documents(documents=list(batch), ids=[d.id for d in batch])
 
-    def similarity_search(self, query: str, k: int | None = None) -> list[tuple[Document, float]]:
+    def get_topk_docs_with_scores(self, query: str, k: int | None = None) -> list[tuple[Document, float]]:
         k = k or settings.RETRIEVAL_CANDIDATE_k
         return self._store.similarity_search_with_relevance_scores(query, k=k)
-
-    def random_sample(
-        self, k: int = 1, score: float = 1.0, seed: int | None = None
-    ) -> list[tuple[Document, float]]:
-        """Return `k` random stored datapoints in `similarity_search`'s shape.
-        Useful for testing and debugging, e.g. to verify that the store is
-        persisting and retrieving documents correctly without needing to run a 
-        similarity search.
-        """
-        raw = self._store.get(include=["documents", "metadatas"])
-        ids = raw["ids"]
-        if not ids:
-            return []
-
-        rng = random.Random(seed)
-        picks = rng.sample(range(len(ids)), k=min(k, len(ids)))
-        return [
-            (
-                Document(
-                    id=ids[i],
-                    page_content=raw["documents"][i],
-                    metadata=raw["metadatas"][i] or {},
-                ),
-                score,
-            )
-            for i in picks
-        ]
     
+    def get_topk_docs(self, query: str, k: int | None = None) -> list[Document]:
+            k = k or settings.RETRIEVAL_CANDIDATE_k
+            return self._store.similarity_search(query, k=k)

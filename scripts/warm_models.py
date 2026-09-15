@@ -4,7 +4,7 @@ from coffee_rag.config import settings
 
 
 def warm_reranker() -> None:
-    """Stage-1 cross-encoder reranker. Downloads to the HF cache and runs one
+    """Cross-encoder reranker. Downloads to the HF cache and runs one
     prediction to force the full weights load, not just the config fetch."""
     from sentence_transformers import CrossEncoder
 
@@ -14,22 +14,19 @@ def warm_reranker() -> None:
 
 
 def warm_hallucination() -> None:
-    """Vectara HHEM factual-consistency classifier. ``trust_remote_code`` is
-    required: the repo ships a custom model class with its own ``predict``."""
-    from transformers import AutoModelForSequenceClassification
+    """MiniCheck factual-support classifier. Constructing it downloads + loads
+    the weights; one score() call forces the forward pass."""
+    from minicheck.minicheck import MiniCheck
 
-    model = AutoModelForSequenceClassification.from_pretrained(
-        settings.HALLUCINATION_MODEL, trust_remote_code=True
-    )
-    score = model.predict([("The sky is blue.", "The sky is blue.")])
-    print(f"[hallucination] {settings.HALLUCINATION_MODEL} -> sample score {float(score[0]):.3f}")
+    model = MiniCheck(model_name=settings.HALLUCINATION_MODEL)
+    _, raw_prob, _, _ = model.score(docs=["The sky is blue."], claims=["The sky is blue."])
+    print(f"[hallucination] {settings.HALLUCINATION_MODEL} -> sample score {float(raw_prob[0]):.3f}")
 
 
 WARMERS = {
     "reranker": warm_reranker,
     "hallucination": warm_hallucination,
 }
-
 
 def main() -> int:
     failed: list[str] = []

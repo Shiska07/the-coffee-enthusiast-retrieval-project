@@ -1,0 +1,923 @@
+
+
+[
+  {
+    "id": "q1",
+    "question": "I love floral, jasmine-like light roast coffees from Ethiopia — almost tea-like. What should I try?",
+    "criteria": {
+      "flavor_notes": [
+        "floral",
+        "jasmine"
+      ],
+      "roast": "Light/Medium-Light",
+      "origin": "Ethiopia"
+    },
+    "answer": "Here are three light-roast Ethiopians with exactly that floral, jasmine, tea-like character:\n\n1. **Testi Ayla Double Ethiopia** by Barrington Coffee Roasting — rated 97/100, Light roast, from Sidama Zone, Oromia Region, Ethiopia. High-toned, floral-driven, lyrically sweet. Wisteria, Keemun tea, white nectarine, fresh-cut basil, pink peppercorn in aroma and cup… (~$54.95/12 ounces)\n   Read the full review: https://www.coffeereview.com/review/testi-ayla-double-ethiopia/\n\n2. **Ardent Ethiopia Natural** by JBC Coffee Roasters — rated 97/100, Medium-Light roast, from Sidamo (also Sidama) growing region, south-central Ethiopia. Delicately sweet-tart, richly and intricately aromatic, deep-toned. Dried hibiscus flowers, bergamot, frankincense, lychee, boysenberry in… (~$35.00/8 ounces)\n   Read the full review: https://www.coffeereview.com/review/ardent-ethiopia-natural/\n\n3. **Ethiopia Natural Sidama TAMIRU 74158** by Kakalove Cafe — rated 96/100, Medium-Light roast, from Sidama growing region, southern Ethiopia. Provocatively sweet, richly floral, musky. Aromatic orchid, cocoa nib, finger lime, fine musk, toffee in aroma and cup. Elegantly tart in… (~NT $400/4 ounces)\n   Read the full review: https://www.coffeereview.com/review/ethiopia-natural-sidama-tamiru-74158/",
+    "recommended_coffees": [
+      {
+        "name": "Testi Ayla Double Ethiopia",
+        "roaster": "Barrington Coffee Roasting",
+        "rating": 97,
+        "roast": "Light",
+        "origin": "Sidama Zone, Oromia Region, Ethiopia",
+        "price": "$54.95/12 ounces",
+        "review_date": "2021-08-01",
+        "review_url": "https://www.coffeereview.com/review/testi-ayla-double-ethiopia/",
+        "tasting_note": "High-toned, floral-driven, lyrically sweet. Wisteria, Keemun tea, white nectarine, fresh-cut basil, pink peppercorn in aroma and cup. Impeccably crystalline, balanced structure with buoyant acidity; delicately satiny mouthfeel. Very long, integrated, satisfying finish, with fruit and floral notes…"
+      },
+      {
+        "name": "Ardent Ethiopia Natural",
+        "roaster": "JBC Coffee Roasters",
+        "rating": 97,
+        "roast": "Medium-Light",
+        "origin": "Sidamo (also Sidama) growing region, south-central Ethiopia",
+        "price": "$35.00/8 ounces",
+        "review_date": "2020-11-01",
+        "review_url": "https://www.coffeereview.com/review/ardent-ethiopia-natural/",
+        "tasting_note": "Delicately sweet-tart, richly and intricately aromatic, deep-toned. Dried hibiscus flowers, bergamot, frankincense, lychee, boysenberry in aroma and cup. Confidently sweet-tart structure with sparkling acidity; silky, buoyant mouthfeel. The long, lingering flavor-saturated finish intoxicatingly…"
+      },
+      {
+        "name": "Ethiopia Natural Sidama TAMIRU 74158",
+        "roaster": "Kakalove Cafe",
+        "rating": 96,
+        "roast": "Medium-Light",
+        "origin": "Sidama growing region, southern Ethiopia",
+        "price": "NT $400/4 ounces",
+        "review_date": "2022-01-01",
+        "review_url": "https://www.coffeereview.com/review/ethiopia-natural-sidama-tamiru-74158/",
+        "tasting_note": "Provocatively sweet, richly floral, musky. Aromatic orchid, cocoa nib, finger lime, fine musk, toffee in aroma and cup. Elegantly tart in structure with bright, juicy acidity; crisp yet syrupy mouthfeel. Very long, flavor-laden finish."
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "question": "Can you suggest a chocolatey, rich espresso blend that's medium-light roast?",
+    "criteria": {
+      "flavor_notes": [
+        "chocolate"
+      ],
+      "roast": "Medium-Light",
+      "type": "espresso blend"
+    },
+    "answer": "These three medium-light espresso blends deliver rich, chocolaty depth in the cup:\n\n1. **Twenty Five** by Barrington Coffee Roasting — rated 96/100, Medium-Light roast, from Ethiopia; Papua New Guinea; Guatemala. Luminous, complexly layered, impossibly rich. Caramelized pineapple, tamarind, star jasmine, chocolate fudge, myrrh in aroma and small cup… (~$14.45/12 ounces)\n   Read the full review: https://www.coffeereview.com/review/twenty-five/\n\n2. **Blend No.7 Berrichee** by Quartet Kaffe — rated 95/100, Medium-Light roast, from Ethiopia; Colombia; Panama; Mexico. Chocolaty, fruit-toned, savory-sweet. Chocolate fudge, pomegranate, saltwater taffy, frankincense, hop flowers in aroma and small cup… (~NT $420/200 grams)\n   Read the full review: https://www.coffeereview.com/review/blend-no-7-berrichee/\n\n3. **Flight Seasonal Espresso** by Red Rooster Coffee Roaster — rated 95/100, Medium-Light roast, from Ethiopia; Dominican Republic. Richly spice-toned, deeply floral. Honeysuckle, black cherry, baking spices, dark chocolate, amber in aroma and small cup. Plush… (~$18.99/12 ounces)\n   Read the full review: https://www.coffeereview.com/review/flight-seasonal-espresso-8/",
+    "recommended_coffees": [
+      {
+        "name": "Twenty Five",
+        "roaster": "Barrington Coffee Roasting",
+        "rating": 96,
+        "roast": "Medium-Light",
+        "origin": "Ethiopia; Papua New Guinea; Guatemala",
+        "price": "$14.45/12 ounces",
+        "review_date": "2018-10-01",
+        "review_url": "https://www.coffeereview.com/review/twenty-five/",
+        "tasting_note": "Luminous, complexly layered, impossibly rich. Caramelized pineapple, tamarind, star jasmine, chocolate fudge, myrrh in aroma and small cup. Creamy, vivacious mouthfeel; long, flavor-saturated finish. Close to otherworldly in three parts milk: All the notes from the cup harmonize, and new notes…"
+      },
+      {
+        "name": "Blend No.7 Berrichee",
+        "roaster": "Quartet Kaffe",
+        "rating": 95,
+        "roast": "Medium-Light",
+        "origin": "Ethiopia; Colombia; Panama; Mexico",
+        "price": "NT $420/200 grams",
+        "review_date": "2021-05-01",
+        "review_url": "https://www.coffeereview.com/review/blend-no-7-berrichee/",
+        "tasting_note": "Chocolaty, fruit-toned, savory-sweet. Chocolate fudge, pomegranate, saltwater taffy, frankincense, hop flowers in aroma and small cup. Creamy mouthfeel; complex, resonant finish. The milk shot is equal parts chocolaty, floral, and fruity. Tastes excellent with milk."
+      },
+      {
+        "name": "Flight Seasonal Espresso",
+        "roaster": "Red Rooster Coffee Roaster",
+        "rating": 95,
+        "roast": "Medium-Light",
+        "origin": "Ethiopia; Dominican Republic",
+        "price": "$18.99/12 ounces",
+        "review_date": "2021-04-01",
+        "review_url": "https://www.coffeereview.com/review/flight-seasonal-espresso-8/",
+        "tasting_note": "Richly spice-toned, deeply floral. Honeysuckle, black cherry, baking spices, dark chocolate, amber in aroma and small cup. Plush, syrupy-smooth mouthfeel; finely balanced, flavor-saturated finish. The milk shot amplifies floral tones suggesting honeysuckle with undertones of black cherry and…"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "question": "I only buy organic, single-origin coffee from Latin America. Any recommendations?",
+    "criteria": {
+      "certification": "organic",
+      "origin_type": "single-origin",
+      "region": "Latin America"
+    },
+    "answer": "Here are three certified-organic, single-origin coffees from Latin America worth seeking out:\n\n1. **Costa Rica Perla Negra** by Durango Coffee Company — rated 95/100, Medium roast, from Sabanilla de Alajuela growing region, Costa Rica. Deeply rich, crisply sweet, fruit- and chocolate-toned. Dried mango, chocolate fudge, narcissus-like flowers, roasted almond, fresh-cut… (~$16.95/12 ounces)\n   Read the full review: https://www.coffeereview.com/review/costa-rica-perla-negra/\n\n2. **Colombia Antioquia Natural Carbonic Maceration Caturra** by Kakalove Cafe — rated 95/100, Medium-Light roast, from Antioquia Department, Colombia. Opulent, richly sweet-tart-savory. Black currant jam, dark chocolate fudge, cherry blossom, toasted pecan, cedar in aroma and cup… (~NT $310/8 ounces)\n   Read the full review: https://www.coffeereview.com/review/colombia-antioquia-natural-carbonic-maceration-caturra/\n\n3. **Colombia Finca Santa Maria** by SkyTop Coffee — rated 95/100, Medium-Light roast, from Aratoca, Santander Department, Colombia. Resonantly bright and juicy, deeply balanced. Strawberry guava, cocoa nib, Meyer lemon zest, sassafras, wisteria in aroma and cup… (~$18.00/12 ounces)\n   Read the full review: https://www.coffeereview.com/review/colombia-finca-santa-maria/",
+    "recommended_coffees": [
+      {
+        "name": "Costa Rica Perla Negra",
+        "roaster": "Durango Coffee Company",
+        "rating": 95,
+        "roast": "Medium",
+        "origin": "Sabanilla de Alajuela growing region, Costa Rica",
+        "price": "$16.95/12 ounces",
+        "review_date": "2018-08-01",
+        "review_url": "https://www.coffeereview.com/review/costa-rica-perla-negra/",
+        "tasting_note": "Deeply rich, crisply sweet, fruit- and chocolate-toned. Dried mango, chocolate fudge, narcissus-like flowers, roasted almond, fresh-cut cedar in aroma and small cup. Lively, silky smooth mouthfeel; resonant, flavor-saturated finish. The chocolate-forward presentation in three parts milk is nuanced…"
+      },
+      {
+        "name": "Colombia Antioquia Natural Carbonic Maceration Caturra",
+        "roaster": "Kakalove Cafe",
+        "rating": 95,
+        "roast": "Medium-Light",
+        "origin": "Antioquia Department, Colombia",
+        "price": "NT $310/8 ounces",
+        "review_date": "2021-02-01",
+        "review_url": "https://www.coffeereview.com/review/colombia-antioquia-natural-carbonic-maceration-caturra/",
+        "tasting_note": "Opulent, richly sweet-tart-savory. Black currant jam, dark chocolate fudge, cherry blossom, toasted pecan, cedar in aroma and cup. Sweet-toned with tart-savory underpinnings; elegant, balanced, high-toned acidity. Deeply chocolaty and fruit-toned in the finish."
+      },
+      {
+        "name": "Colombia Finca Santa Maria",
+        "roaster": "SkyTop Coffee",
+        "rating": 95,
+        "roast": "Medium-Light",
+        "origin": "Aratoca, Santander Department, Colombia",
+        "price": "$18.00/12 ounces",
+        "review_date": "2021-07-01",
+        "review_url": "https://www.coffeereview.com/review/colombia-finca-santa-maria/",
+        "tasting_note": "Resonantly bright and juicy, deeply balanced. Strawberry guava, cocoa nib, Meyer lemon zest, sassafras, wisteria in aroma and cup. Elegantly sweet structure with crisp, vibrant acidity; plush, syrupy mouthfeel. The coherent, flavor-laden finish resonates with all the notes from the cup."
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "question": "I'm after a bright, citrusy Kenyan coffee — lots of acidity. What do you recommend?",
+    "criteria": {
+      "flavor_notes": [
+        "citrus"
+      ],
+      "origin": "Kenya",
+      "acidity": "high"
+    },
+    "answer": "For a bright, citrus-forward Kenyan cup, try these:\n\n1. **Kenya Washed Kiambu Uklili AB Espresso** by Kakalove Cafe — rated 96/100, Medium-Light roast, from Kiambu growing region, south-central Kenya. Richly sweet-tart, high-toned, deeply aromatic. Dried pomegranate, honeysuckle, dark chocolate, amber, pink grapefruit zest in aroma and… (~NT $400/8 ounces)\n   Read the full review: https://www.coffeereview.com/review/kenya-washed-kiambu-uklili-ab-espresso/\n\n2. **Gikanda Kenya** by JBC Coffee Roasters — rated 96/100, Medium-Light roast, from South-central Kenya. Sweetly bright, spicy and savory-edged. Orange zest, black currant, baker’s chocolate, tamarind, floral-toned vanilla, redwood in aroma and… (~$19.25/12 ounces)\n   Read the full review: https://www.coffeereview.com/review/gikanda-kenya/\n\n3. **Kenya** by CafeTaster — rated 95/100, Medium-Light roast, from Nyeri growing region, south-central Kenya. Nuanced, multi-layered. Almond brittle, pomegranate, dark chocolate, narcissus, lemon-thyme in aroma and small cup. Sweetly savory with… (~NT $600/227 grams)\n   Read the full review: https://www.coffeereview.com/review/kenya-9/",
+    "recommended_coffees": [
+      {
+        "name": "Kenya Washed Kiambu Uklili AB Espresso",
+        "roaster": "Kakalove Cafe",
+        "rating": 96,
+        "roast": "Medium-Light",
+        "origin": "Kiambu growing region, south-central Kenya",
+        "price": "NT $400/8 ounces",
+        "review_date": "2022-06-01",
+        "review_url": "https://www.coffeereview.com/review/kenya-washed-kiambu-uklili-ab-espresso/",
+        "tasting_note": "Richly sweet-tart, high-toned, deeply aromatic. Dried pomegranate, honeysuckle, dark chocolate, amber, pink grapefruit zest in aroma and small cup. Plush, voluptuous mouthfeel; resonant, flavor-laden finish. Superb in cappuccino-scaled milk: chocolaty and floral-toned. Tastes excellent with milk."
+      },
+      {
+        "name": "Gikanda Kenya",
+        "roaster": "JBC Coffee Roasters",
+        "rating": 96,
+        "roast": "Medium-Light",
+        "origin": "South-central Kenya",
+        "price": "$19.25/12 ounces",
+        "review_date": "2017-11-01",
+        "review_url": "https://www.coffeereview.com/review/gikanda-kenya/",
+        "tasting_note": "Sweetly bright, spicy and savory-edged. Orange zest, black currant, baker’s chocolate, tamarind, floral-toned vanilla, redwood in aroma and cup. Deeply bright and richly savory in structure; syrupy, lively mouthfeel. Very deep, very lasting finish, saturated with flavor: chocolate, black currant…"
+      },
+      {
+        "name": "Kenya",
+        "roaster": "CafeTaster",
+        "rating": 95,
+        "roast": "Medium-Light",
+        "origin": "Nyeri growing region, south-central Kenya",
+        "price": "NT $600/227 grams",
+        "review_date": "2022-08-01",
+        "review_url": "https://www.coffeereview.com/review/kenya-9/",
+        "tasting_note": "Nuanced, multi-layered. Almond brittle, pomegranate, dark chocolate, narcissus, lemon-thyme in aroma and small cup. Sweetly savory with juicy acidity; syrupy-smooth, vibrant mouthfeel with. Resonant, long, flavor-saturated finish."
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "question": "I have a sensitive stomach and prefer low-acid coffees with a smooth, full body. Suggestions?",
+    "criteria": {
+      "acidity": "low/gentle",
+      "body": "full/smooth"
+    },
+    "answer": "These three are known for gentle acidity and a smooth, full mouthfeel — easy on a sensitive stomach:\n\n1. **Ethiopia Yirgacheffe Gotiti Natural** by RD Cafe — rated 95/100, Medium-Light roast, from Yirgacheffe growing region, southern Ethiopia. Sweetly floral and berry-driven, balanced. Narcissus, blueberry, honey, nutmeg, milk chocolate in aroma and cup. Sweet-tart structure with… (~NT $380/8 ounces)\n   Read the full review: https://www.coffeereview.com/review/ethiopia-yirgacheffe-gotiti-natural/\n\n2. **Aged Sumatra Semiga** by Paradise Roasters — rated 94/100, Medium-Dark roast, from Simalungun, Sumatra, Indonesia. Deeply sweet-savory. Pipe tobacco, scorched clove, dark chocolate, ripe banana, a hint of freesia-like flowers in aroma and cup. Balanced… (~$30.00/12 ounces)\n   Read the full review: https://www.coffeereview.com/review/aged-sumatra-semiga/\n\n3. **Alamendah Patuha Coffee** by Mother Pigeons — rated 94/100, Medium roast, from West Java, Indonesia. Richly sweet-savory. Concord grape, freesia, cedar, molasses, orange zest in aroma and cup. Sweetly savory structure with round, gentle… (~IDR $120,000/200 grams)\n   Read the full review: https://www.coffeereview.com/review/alamendah-patuha-coffee/",
+    "recommended_coffees": [
+      {
+        "name": "Ethiopia Yirgacheffe Gotiti Natural",
+        "roaster": "RD Cafe",
+        "rating": 95,
+        "roast": "Medium-Light",
+        "origin": "Yirgacheffe growing region, southern Ethiopia",
+        "price": "NT $380/8 ounces",
+        "review_date": "2021-02-01",
+        "review_url": "https://www.coffeereview.com/review/ethiopia-yirgacheffe-gotiti-natural/",
+        "tasting_note": "Sweetly floral and berry-driven, balanced. Narcissus, blueberry, honey, nutmeg, milk chocolate in aroma and cup. Sweet-tart structure with round, gentle acidity; plush, syrupy-smooth mouthfeel. Finish leads with notes of blueberry and narcissus in the short, consolidating to milk chocolate in the…"
+      },
+      {
+        "name": "Aged Sumatra Semiga",
+        "roaster": "Paradise Roasters",
+        "rating": 94,
+        "roast": "Medium-Dark",
+        "origin": "Simalungun, Sumatra, Indonesia",
+        "price": "$30.00/12 ounces",
+        "review_date": "2022-04-01",
+        "review_url": "https://www.coffeereview.com/review/aged-sumatra-semiga/",
+        "tasting_note": "Deeply sweet-savory. Pipe tobacco, scorched clove, dark chocolate, ripe banana, a hint of freesia-like flowers in aroma and cup. Balanced, bittersweet structure with soft acidity; very full, syrupy-smooth mouthfeel. Savory-leaning finish with notes of pipe tobacco and scorched clove, lifted by a…"
+      },
+      {
+        "name": "Alamendah Patuha Coffee",
+        "roaster": "Mother Pigeons",
+        "rating": 94,
+        "roast": "Medium",
+        "origin": "West Java, Indonesia",
+        "price": "IDR $120,000/200 grams",
+        "review_date": "2019-12-01",
+        "review_url": "https://www.coffeereview.com/review/alamendah-patuha-coffee/",
+        "tasting_note": "Richly sweet-savory. Concord grape, freesia, cedar, molasses, orange zest in aroma and cup. Sweetly savory structure with round, gentle acidity; full, syrupy mouthfeel. Crisply sweet finish centered around notes of Concord grape, molasses and cedar."
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "question": "Looking for a naturally-processed Ethiopian coffee with big blueberry and berry notes.",
+    "criteria": {
+      "flavor_notes": [
+        "blueberry",
+        "berry"
+      ],
+      "process": "natural",
+      "origin": "Ethiopia"
+    },
+    "answer": "These natural-processed Ethiopians are loaded with blueberry and berry character:\n\n1. **Ethiopia Yirgacheffe Chelelektu Natural** by Dragonfly Coffee Roasters — rated 96/100, Medium-Light roast, from Yirgacheffe growing region, southern Ethiopia. Deeply sweet, elegantly rich. Mulberry, sandalwood, tangerine zest, jasmine, baking spices in aroma and cup. Sweetly tart in structure with… (~$18.00/12 ounces)\n   Read the full review: https://www.coffeereview.com/review/ethiopia-yirgacheffe-chelelektu-natural/\n\n2. **Ethiopia Guji Uraga Tobutu Tuta G1 Experimental LOT 181NA2021** by SOT Coffee Roaster — rated 95/100, Light roast, from Guji Zone, Oromia Region, southern Ethiopia. Delicately fruity, crisply high-toned. Wild strawberry, cocoa nib, lychee, bergamot, sandalwood in aroma and cup. Sweet-toned structure… (~$12.50/100 grams)\n   Read the full review: https://www.coffeereview.com/review/ethiopia-guji-uraga-tobutu-tuta-g1-experimental-lot-181na2021/\n\n3. **Ethiopia Gera Estate Anaerobic Natural** by Magnolia Coffee — rated 95/100, Medium-Light roast, from Djimma growing region, Oromia State, Ethiopia. Tropically fruity, richly chocolaty. Dried blueberry, lychee, chocolate fudge, cedar, wisteria in aroma and cup. Brightly sweet-tart… (~$22.00/12 ounces)\n   Read the full review: https://www.coffeereview.com/review/ethiopia-gera-estate-anaerobic-natural/",
+    "recommended_coffees": [
+      {
+        "name": "Ethiopia Yirgacheffe Chelelektu Natural",
+        "roaster": "Dragonfly Coffee Roasters",
+        "rating": 96,
+        "roast": "Medium-Light",
+        "origin": "Yirgacheffe growing region, southern Ethiopia",
+        "price": "$18.00/12 ounces",
+        "review_date": "2019-08-01",
+        "review_url": "https://www.coffeereview.com/review/ethiopia-yirgacheffe-chelelektu-natural/",
+        "tasting_note": "Deeply sweet, elegantly rich. Mulberry, sandalwood, tangerine zest, jasmine, baking spices in aroma and cup. Sweetly tart in structure with high-toned, juicy acidity; plush, syrupy mouthfeel. The seemingly infinite finish fulfills the promise of the cup, leading with deep berry and citrus zest…"
+      },
+      {
+        "name": "Ethiopia Guji Uraga Tobutu Tuta G1 Experimental LOT 181NA2021",
+        "roaster": "SOT Coffee Roaster",
+        "rating": 95,
+        "roast": "Light",
+        "origin": "Guji Zone, Oromia Region, southern Ethiopia",
+        "price": "$12.50/100 grams",
+        "review_date": "2022-10-01",
+        "review_url": "https://www.coffeereview.com/review/ethiopia-guji-uraga-tobutu-tuta-g1-experimental-lot-181na2021/",
+        "tasting_note": "Delicately fruity, crisply high-toned. Wild strawberry, cocoa nib, lychee, bergamot, sandalwood in aroma and cup. Sweet-toned structure with gently bright acidity; satiny, viscous mouthfeel. The crisp, cocoa-driven finish is supported by hints of strawberry."
+      },
+      {
+        "name": "Ethiopia Gera Estate Anaerobic Natural",
+        "roaster": "Magnolia Coffee",
+        "rating": 95,
+        "roast": "Medium-Light",
+        "origin": "Djimma growing region, Oromia State, Ethiopia",
+        "price": "$22.00/12 ounces",
+        "review_date": "2022-10-01",
+        "review_url": "https://www.coffeereview.com/review/ethiopia-gera-estate-anaerobic-natural/",
+        "tasting_note": "Tropically fruity, richly chocolaty. Dried blueberry, lychee, chocolate fudge, cedar, wisteria in aroma and cup. Brightly sweet-tart structure with winy acidity; plush, very viscous mouthfeel. Long, resonant, flavor-saturated finish."
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "question": "My doctor told me to cut caffeine, but I still want a rich, chocolaty cup. Any good decaf coffees?",
+    "criteria": {
+      "decaf": true,
+      "flavor_notes": [
+        "chocolate"
+      ]
+    },
+    "answer": "Good news — decaf doesn't mean flavorless. These three are rich and chocolaty:\n\n1. **Moonbow Decaf** by Paradise Roasters — rated 92/100, Medium-Dark roast, from South America. Richly and sweetly tart, chocolaty. Dark chocolate, hazelnut butter, lightly scorched cinnamon, date, fir in aroma and cup. Sweet in… (~$13.95/12 ounces)\n   Read the full review: https://www.coffeereview.com/review/moonbow-decaf/\n\n2. **Ethiopia Sidamo Natural Water Decaf** by Jackrabbit Java — rated 91/100, Medium-Light roast, from Guji Zone, Oromia Region, southern Ethiopia. Deep-toned, chocolaty. Baking chocolate, date, almond butter, fresh-cut oak, agave syrup in aroma and cup. Sweet-toned structure with… (~$14.00/12 ounces)\n   Read the full review: https://www.coffeereview.com/review/ethiopia-sidamo-natural-water-decaf/\n\n3. **Mexico Altura Natural Water Process Decaf** by Jackrabbit Java — rated 91/100, Medium-Light roast, from Chiapas, Mexico. Crisply chocolaty, deep-toned. Baking chocolate, almond, lily, candy apple, fir in aroma and cup. Sweet structure with gently round… (~$14.00/12 ounces)\n   Read the full review: https://www.coffeereview.com/review/mexico-altura-natural-water-process-decaf/",
+    "recommended_coffees": [
+      {
+        "name": "Moonbow Decaf",
+        "roaster": "Paradise Roasters",
+        "rating": 92,
+        "roast": "Medium-Dark",
+        "origin": "South America",
+        "price": "$13.95/12 ounces",
+        "review_date": "2019-02-01",
+        "review_url": "https://www.coffeereview.com/review/moonbow-decaf/",
+        "tasting_note": "Richly and sweetly tart, chocolaty. Dark chocolate, hazelnut butter, lightly scorched cinnamon, date, fir in aroma and cup. Sweet in structure with gentle, rounded acidity; velvety mouthfeel. The chocolaty finish is complicated by date and hazelnut."
+      },
+      {
+        "name": "Ethiopia Sidamo Natural Water Decaf",
+        "roaster": "Jackrabbit Java",
+        "rating": 91,
+        "roast": "Medium-Light",
+        "origin": "Guji Zone, Oromia Region, southern Ethiopia",
+        "price": "$14.00/12 ounces",
+        "review_date": "2021-05-01",
+        "review_url": "https://www.coffeereview.com/review/ethiopia-sidamo-natural-water-decaf/",
+        "tasting_note": "Deep-toned, chocolaty. Baking chocolate, date, almond butter, fresh-cut oak, agave syrup in aroma and cup. Sweet-toned structure with gentle, round acidity; full, satiny mouthfeel. Crisp, chocolaty finish with undertones of almond and date."
+      },
+      {
+        "name": "Mexico Altura Natural Water Process Decaf",
+        "roaster": "Jackrabbit Java",
+        "rating": 91,
+        "roast": "Medium-Light",
+        "origin": "Chiapas, Mexico",
+        "price": "$14.00/12 ounces",
+        "review_date": "2022-06-01",
+        "review_url": "https://www.coffeereview.com/review/mexico-altura-natural-water-process-decaf/",
+        "tasting_note": "Crisply chocolaty, deep-toned. Baking chocolate, almond, lily, candy apple, fir in aroma and cup. Sweet structure with gently round acidity; full, crisply syrupy mouthfeel. Gently drying, quite chocolaty finish."
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "question": "I like bold, smoky dark roast coffee — the darker the better. What's good?",
+    "criteria": {
+      "roast": "Dark/Very Dark",
+      "body": "bold"
+    },
+    "answer": "For bold, smoky dark roasts, these are the standouts in the dataset:\n\n1. **Indonesia Sumatra Gayo Espresso** by Simon Hsieh's Aroma Roast Coffees — rated 94/100, Dark roast, from Gayo (also Aceh) growing region, Aceh Province, northern Sumatra, Indonesia. Very rich and deeply sweet. Dark chocolate, dried cherry, singed cedar, lilac, candy cap mushroom with layered complexity in aroma and… (~NT $1200/16 ounces)\n   Read the full review: https://www.coffeereview.com/review/indonesia-sumatra-gayo-espresso/\n\n2. **Sumatra Dark** by Starbucks Coffee — rated 90/100, Dark roast, from Sumatra, Indonesia. Earthy, bittersweet. Fresh-cut oak, cocoa powder, fresh leather, sweet pea, lily in aroma and cup. Bittersweet structure with barely… (~$12.99/12 ounces)\n   Read the full review: https://www.coffeereview.com/review/sumatra-dark-3/\n\n3. **The Knight Dark Roast** by Glory Brew — rated 89/100, Very Dark roast, from Indonesia; Central and South America. (As brewed in a Keurig 2.0 K500 Series single-serve brewing device at a 6-ounce serving size.) Richly sweet, caramel-toned. Cocoa powder… (~$7.50/12 capsules)\n   Read the full review: https://www.coffeereview.com/review/knight-dark-roast/",
+    "recommended_coffees": [
+      {
+        "name": "Indonesia Sumatra Gayo Espresso",
+        "roaster": "Simon Hsieh's Aroma Roast Coffees",
+        "rating": 94,
+        "roast": "Dark",
+        "origin": "Gayo (also Aceh) growing region, Aceh Province, northern Sumatra, Indonesia",
+        "price": "NT $1200/16 ounces",
+        "review_date": "2019-10-01",
+        "review_url": "https://www.coffeereview.com/review/indonesia-sumatra-gayo-espresso/",
+        "tasting_note": "Very rich and deeply sweet. Dark chocolate, dried cherry, singed cedar, lilac, candy cap mushroom with layered complexity in aroma and small cup. Very thick, syrupy mouthfeel; the finish consolidates to smoky cocoa and sweetly savory mushroom. In three parts milk, the cup is very chocolaty, sweet…"
+      },
+      {
+        "name": "Sumatra Dark",
+        "roaster": "Starbucks Coffee",
+        "rating": 90,
+        "roast": "Dark",
+        "origin": "Sumatra, Indonesia",
+        "price": "$12.99/12 ounces",
+        "review_date": "2022-04-01",
+        "review_url": "https://www.coffeereview.com/review/sumatra-dark-3/",
+        "tasting_note": "Earthy, bittersweet. Fresh-cut oak, cocoa powder, fresh leather, sweet pea, lily in aroma and cup. Bittersweet structure with barely perceptible acidity; very full, creamy mouthfeel. Wood-framed finish with hints of dark chocolate and fresh leather."
+      },
+      {
+        "name": "The Knight Dark Roast",
+        "roaster": "Glory Brew",
+        "rating": 89,
+        "roast": "Very Dark",
+        "origin": "Indonesia; Central and South America",
+        "price": "$7.50/12 capsules",
+        "review_date": "2017-11-01",
+        "review_url": "https://www.coffeereview.com/review/knight-dark-roast/",
+        "tasting_note": "(As brewed in a Keurig 2.0 K500 Series single-serve brewing device at a 6-ounce serving size.) Richly sweet, caramel-toned. Cocoa powder, caramel, oak, date, freesia in aroma and cup. Soft, round structure with mild acidity; very satiny, viscous mouthfeel. The caramel-toned finish centers around…"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "question": "I'm curious about honey-processed coffees from Costa Rica. What should I try?",
+    "criteria": {
+      "process": "honey",
+      "origin": "Costa Rica"
+    },
+    "answer": "Here are three honey-processed Costa Rican coffees to explore:\n\n1. **Love of Desolate** by Desolate Cafe — rated 96/100, Medium-Light roast, from Los Angeles, Sabanilla de Alajuela, Costa Rica. Rich-toned, juicy, complex. Dried persimmon, wild honey, myrrh, almond butter, star jasmine in aroma and cup. Sweet-tart structure with… (~NT $500/227 grams)\n   Read the full review: https://www.coffeereview.com/review/love-of-desolate/\n\n2. **Costa Rica Volcan Azul San Isidro Red Honey** by PT’s Coffee Roasting Co. — rated 95/100, Medium-Light roast, from Poás Volcano region, Alajuela Province, Costa Rica. Brightly sweet-tart; juicy and complex. Goji berry, dark chocolate, nutmeg, dark caramel, gardenia in aroma and cup. Sweetly tart structure… (~$22.00/12 ounces)\n   Read the full review: https://www.coffeereview.com/review/costa-rica-volcan-azul-san-isidro-red-honey/\n\n3. **Costa Rica La Florida Red Honey Espresso** by Kakalove Cafe — rated 95/100, Medium-Light roast, from Copey District, Costa Rica. Delicately fruit-toned, floral and lively. Lilac, dried Bing cherry, sandalwood, macadamia nut, wild honey in aroma and small cup. Full… (~NT $300/8 ounces)\n   Read the full review: https://www.coffeereview.com/review/costa-rica-la-florida-red-honey-espresso/",
+    "recommended_coffees": [
+      {
+        "name": "Love of Desolate",
+        "roaster": "Desolate Cafe",
+        "rating": 96,
+        "roast": "Medium-Light",
+        "origin": "Los Angeles, Sabanilla de Alajuela, Costa Rica",
+        "price": "NT $500/227 grams",
+        "review_date": "2021-05-01",
+        "review_url": "https://www.coffeereview.com/review/love-of-desolate/",
+        "tasting_note": "Rich-toned, juicy, complex. Dried persimmon, wild honey, myrrh, almond butter, star jasmine in aroma and cup. Sweet-tart structure with high-toned, vibrant acidity; very full, syrupy-smooth mouthfeel. Long, lingering, rich finish that honors all of the cup’s aromatics."
+      },
+      {
+        "name": "Costa Rica Volcan Azul San Isidro Red Honey",
+        "roaster": "PT’s Coffee Roasting Co.",
+        "rating": 95,
+        "roast": "Medium-Light",
+        "origin": "Poás Volcano region, Alajuela Province, Costa Rica",
+        "price": "$22.00/12 ounces",
+        "review_date": "2021-12-01",
+        "review_url": "https://www.coffeereview.com/review/costa-rica-volcan-azul-san-isidro-red-honey/",
+        "tasting_note": "Brightly sweet-tart; juicy and complex. Goji berry, dark chocolate, nutmeg, dark caramel, gardenia in aroma and cup. Sweetly tart structure with winy acidity;"
+      },
+      {
+        "name": "Costa Rica La Florida Red Honey Espresso",
+        "roaster": "Kakalove Cafe",
+        "rating": 95,
+        "roast": "Medium-Light",
+        "origin": "Copey District, Costa Rica",
+        "price": "NT $300/8 ounces",
+        "review_date": "2021-08-01",
+        "review_url": "https://www.coffeereview.com/review/costa-rica-la-florida-red-honey-espresso/",
+        "tasting_note": "Delicately fruit-toned, floral and lively. Lilac, dried Bing cherry, sandalwood, macadamia nut, wild honey in aroma and small cup. Full, syrupy mouthfeel; delicate, long finish. Lilac and Bing cherry notes deepen in three parts milk, balanced by creamy macadamia nut and wild honey; hints of…"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "question": "Give me your best jasmine and floral-forward Yirgacheffe recommendations.",
+    "criteria": {
+      "flavor_notes": [
+        "jasmine",
+        "floral"
+      ],
+      "origin": "Yirgacheffe, Ethiopia"
+    },
+    "answer": "These Yirgacheffe coffees are especially floral and jasmine-scented:\n\n1. **Ethiopia Aphrodite Washed Espresso** by Simon Hsieh Aroma Roast Coffees — rated 96/100, Medium roast, from Yirgacheffe growing region, south-central Ethiopia. Aromatic orchid, dark chocolate, black cherry, gently scorched sandalwood, tarragon in aroma and small cup. Creamy-smooth mouthfeel… (~NT $850/8 ounces)\n   Read the full review: https://www.coffeereview.com/review/ethiopia-aphrodite-washed-espresso/\n\n2. **Dodora Double** by Barrington Coffee Roasting — rated 96/100, Light roast, from Gedeo Zone, Yirgacheffe growing region, southern EthiopiaGedeo Zone, southern Ethiopia. Lush, vibrant; intricate and balanced. Fine musk, dried jasmine, passionfruit, bergamot, dark chocolate in aroma and cup. Complex, richly… (~$9.94/4 ounces)\n   Read the full review: https://www.coffeereview.com/review/dodora-double/\n\n3. **Ethiopia Getu Kurume Natural** by Fumi Coffee Company — rated 95/100, Light roast, from Yirgacheffe growing region, southern Ethiopia. Elegant, delicate, sweetly tart. Bergamot, dried apricot, cocoa nib, sage, star jasmine in aroma and cup. Delicately sweet, balanced… (~NT $460/8 ounces)\n   Read the full review: https://www.coffeereview.com/review/ethiopia-getu-kurume-natural/",
+    "recommended_coffees": [
+      {
+        "name": "Ethiopia Aphrodite Washed Espresso",
+        "roaster": "Simon Hsieh Aroma Roast Coffees",
+        "rating": 96,
+        "roast": "Medium",
+        "origin": "Yirgacheffe growing region, south-central Ethiopia",
+        "price": "NT $850/8 ounces",
+        "review_date": "2022-01-01",
+        "review_url": "https://www.coffeereview.com/review/ethiopia-aphrodite-washed-espresso/",
+        "tasting_note": "Aromatic orchid, dark chocolate, black cherry, gently scorched sandalwood, tarragon in aroma and small cup. Creamy-smooth mouthfeel; resonant, complex, long finish. In three parts milk, floral and fruit tones harmonize with dark chocolate for a particularly complex cappuccino. Tastes excellent with…"
+      },
+      {
+        "name": "Dodora Double",
+        "roaster": "Barrington Coffee Roasting",
+        "rating": 96,
+        "roast": "Light",
+        "origin": "Gedeo Zone, Yirgacheffe growing region, southern EthiopiaGedeo Zone, southern Ethiopia",
+        "price": "$9.94/4 ounces",
+        "review_date": "2018-03-01",
+        "review_url": "https://www.coffeereview.com/review/dodora-double/",
+        "tasting_note": "Lush, vibrant; intricate and balanced. Fine musk, dried jasmine, passionfruit, bergamot, dark chocolate in aroma and cup. Complex, richly sweet structure with bright acidity. Buoyant, silky mouthfeel. The resonant finish fulfills the promise of the cup, carrying all of the flavor notes, including a…"
+      },
+      {
+        "name": "Ethiopia Getu Kurume Natural",
+        "roaster": "Fumi Coffee Company",
+        "rating": 95,
+        "roast": "Light",
+        "origin": "Yirgacheffe growing region, southern Ethiopia",
+        "price": "NT $460/8 ounces",
+        "review_date": "2022-10-01",
+        "review_url": "https://www.coffeereview.com/review/ethiopia-getu-kurume-natural/",
+        "tasting_note": "Elegant, delicate, sweetly tart. Bergamot, dried apricot, cocoa nib, sage, star jasmine in aroma and cup. Delicately sweet, balanced structure with high-toned acidity; very smooth, satiny mouthfeel. Resonant, long, flavor-laden finish."
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "question": "I'm into funky, wine-toned, fermented natural-process coffees. Point me to some.",
+    "criteria": {
+      "flavor_notes": [
+        "wine-toned",
+        "fermented",
+        "funky"
+      ],
+      "process": "natural"
+    },
+    "answer": "For funky, wine-toned, fermented character, these natural-process coffees deliver:\n\n1. **Indonesia Golden Sumatra TP Espresso** by GK Coffee — rated 96/100, Medium roast, from Aceh Province, Sumatra, Indonesia. Complex, multi-layered, richly deep. Honeysuckle, dark chocolate, dried apricot, perique fermented pipe tobacco, pistachio in aroma and… (~NT $450/200 grams)\n   Read the full review: https://www.coffeereview.com/review/indonesia-golden-sumatra-tp-espresso/\n\n2. **Ethiopia Sidama Tamiru Tadesse Anaerobic Natural Special Auction Lot** by Euphora Coffee — rated 95/100, Light roast, from Guji Zone, Oromia Region, southern Ethiopia. Floral-toned, richly fruity. Narcissus, watermelon candy, dark chocolate, amber, clove in aroma and cup. Sweet-savory structure with winey… (~$10.00/4 ounces)\n   Read the full review: https://www.coffeereview.com/review/ethiopia-sidama-tamiru-tadesse-anaerobic-natural-special-auction-lot/\n\n3. **Panama Static Gesha Natural** by PT's Coffee Roasting Co. — rated 95/100, Medium-Light roast, from Boquete growing region, Panama. Fruity, spice-toned, sweetly fermenty. Cherry liqueur, tiramisu, gardenia, tangerine zest, sage in aroma and cup. Richly sweet structure… (~$45.00/12 ounces)\n   Read the full review: https://www.coffeereview.com/review/panama-static-gesha-natural/",
+    "recommended_coffees": [
+      {
+        "name": "Indonesia Golden Sumatra TP Espresso",
+        "roaster": "GK Coffee",
+        "rating": 96,
+        "roast": "Medium",
+        "origin": "Aceh Province, Sumatra, Indonesia",
+        "price": "NT $450/200 grams",
+        "review_date": "2021-03-01",
+        "review_url": "https://www.coffeereview.com/review/indonesia-golden-sumatra-tp-espresso/",
+        "tasting_note": "Complex, multi-layered, richly deep. Honeysuckle, dark chocolate, dried apricot, perique fermented pipe tobacco, pistachio in aroma and small cup. Viscous, creamy mouthfeel; resonant, long, flavor-saturated finish. The milk shot is floral, chocolaty and stone fruit-driven in equal measure. Tastes…"
+      },
+      {
+        "name": "Ethiopia Sidama Tamiru Tadesse Anaerobic Natural Special Auction Lot",
+        "roaster": "Euphora Coffee",
+        "rating": 95,
+        "roast": "Light",
+        "origin": "Guji Zone, Oromia Region, southern Ethiopia",
+        "price": "$10.00/4 ounces",
+        "review_date": "2022-10-01",
+        "review_url": "https://www.coffeereview.com/review/ethiopia-sidama-tamiru-tadesse-anaerobic-natural-special-auction-lot/",
+        "tasting_note": "Floral-toned, richly fruity. Narcissus, watermelon candy, dark chocolate, amber, clove in aroma and cup. Sweet-savory structure with winey acidity; very full, syrupy mouthfeel. Resonant, long, flavor-laden finish."
+      },
+      {
+        "name": "Panama Static Gesha Natural",
+        "roaster": "PT's Coffee Roasting Co.",
+        "rating": 95,
+        "roast": "Medium-Light",
+        "origin": "Boquete growing region, Panama",
+        "price": "$45.00/12 ounces",
+        "review_date": "2022-07-01",
+        "review_url": "https://www.coffeereview.com/review/panama-static-gesha-natural/",
+        "tasting_note": "Fruity, spice-toned, sweetly fermenty. Cherry liqueur, tiramisu, gardenia, tangerine zest, sage in aroma and cup. Richly sweet structure with winey acidity; plush, creamy mouthfeel. Resonant finish, driven by notes of cherry liqueur and gardenia with undertones of sage."
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "question": "I want a smooth, chocolatey, nutty medium roast for my everyday morning cup — nothing too wild or acidic.",
+    "criteria": {
+      "flavor_notes": [
+        "chocolate",
+        "nutty",
+        "almond"
+      ],
+      "roast": "Medium/Medium-Light",
+      "acidity": "low/gentle"
+    },
+    "answer": "These are smooth, chocolate-and-nut-toned medium roasts — great low-key everyday cups:\n\n1. **Colombia Exótico De Altura** by Oak & Bond Coffee Company — rated 94/100, Medium-Light roast, from Giraldo, Antioquia, Colombia. Rich-toned, chocolaty, balanced. Dark chocolate, hazelnut butter, blackberry, yuzu, fresh-cut oak in aroma and cup. Deeply sweet structure… (~$18.00/12 ounces)\n   Read the full review: https://www.coffeereview.com/review/colombia-exotico-de-altura/\n\n2. **Kona Maragogype** by Rusty's Hawaiian — rated 93/100, Medium roast, from Kona growing region, Big Island of Hawai'i. Deep-toned, richly sweet-savory. Dark chocolate, hop flowers, lychee, sandalwood, almond brittle in aroma and cup. Sweet-savory structure… (~$35.00/7 ounces)\n   Read the full review: https://www.coffeereview.com/review/kona-maragogype/\n\n3. **Blue Sky Breakfast Blend** by Paradise Roasters — rated 93/100, Medium-Light roast, from Not disclosed. Chocolaty, deeply sweet. Dark chocolate, dried plum, almond butter, magnolia, cedar in aroma and cup. Sweet structure with brisk acidity… (~$14.95/12 ounces)\n   Read the full review: https://www.coffeereview.com/review/blue-sky-breakfast-blend-3/",
+    "recommended_coffees": [
+      {
+        "name": "Colombia Exótico De Altura",
+        "roaster": "Oak & Bond Coffee Company",
+        "rating": 94,
+        "roast": "Medium-Light",
+        "origin": "Giraldo, Antioquia, Colombia",
+        "price": "$18.00/12 ounces",
+        "review_date": "2022-05-01",
+        "review_url": "https://www.coffeereview.com/review/colombia-exotico-de-altura/",
+        "tasting_note": "Rich-toned, chocolaty, balanced. Dark chocolate, hazelnut butter, blackberry, yuzu, fresh-cut oak in aroma and cup. Deeply sweet structure with gentle, round acidity; plush, satiny-smooth mouthfeel. Particularly rich, complex finish, chocolaty and long."
+      },
+      {
+        "name": "Kona Maragogype",
+        "roaster": "Rusty's Hawaiian",
+        "rating": 93,
+        "roast": "Medium",
+        "origin": "Kona growing region, Big Island of Hawai'i",
+        "price": "$35.00/7 ounces",
+        "review_date": "2020-06-01",
+        "review_url": "https://www.coffeereview.com/review/kona-maragogype/",
+        "tasting_note": "Deep-toned, richly sweet-savory. Dark chocolate, hop flowers, lychee, sandalwood, almond brittle in aroma and cup. Sweet-savory structure with round, gentle acidity; plush, creamy mouthfeel. The resonant finish is redolent with notes of almond brittle and lychee."
+      },
+      {
+        "name": "Blue Sky Breakfast Blend",
+        "roaster": "Paradise Roasters",
+        "rating": 93,
+        "roast": "Medium-Light",
+        "origin": "Not disclosed",
+        "price": "$14.95/12 ounces",
+        "review_date": "2021-08-01",
+        "review_url": "https://www.coffeereview.com/review/blue-sky-breakfast-blend-3/",
+        "tasting_note": "Chocolaty, deeply sweet. Dark chocolate, dried plum, almond butter, magnolia, cedar in aroma and cup. Sweet structure with brisk acidity; very full, syrupy mouthfeel.The finish leads with notes of dark chocolate and almond butter with undertones of fresh-cut cedar."
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "question": "What are some standout high-altitude Guatemalan coffees?",
+    "criteria": {
+      "origin": "Guatemala"
+    },
+    "answer": "Here are three excellent high-altitude Guatemalan coffees:\n\n1. **Guatemala Washed El Injerto EI05 Mocca** by Kakalove Cafe — rated 96/100, Light roast, from La Libertad, Huehuetenango Department, Guatemala. Exceptionally balanced, elegant, resonantly spice-toned. Red currant, butterscotch, hazelnut butter, honeysuckle, sandalwood in aroma and… (~NT $1200/4 ounces)\n   Read the full review: https://www.coffeereview.com/review/guatemala-washed-el-injerto-ei05-mocca/\n\n2. **Guatemala Santa Felisa Wild Yeast Natural Gesha** by Kakalove Cafe — rated 96/100, Light roast, from Acatenango growing region, central Guatemala. Elegantly fruit-toned, complex, deeply layered. Lychee, macadamia nut, pink grapefruit zest, cocoa nib, plumeria in aroma and cup. Richly… (~NT $375/4 ounces)\n   Read the full review: https://www.coffeereview.com/review/guatemala-santa-felisa-wild-yeast-natural-gesha/\n\n3. **Guatemala COE-NW#2 Sierra Roja Geisha Washed** by GK Coffee — rated 96/100, Medium-Light roast, from San Cristobal Acasaguastlán, El Progreso, Sierra de las Minas, Guatemala. Complex, multi-layered, richly floral-toned. Lilac, rose hips, tangerine zest, Marcona almond, cocoa nib in aroma and cup. Balanced… (~NT $600/100 grams)\n   Read the full review: https://www.coffeereview.com/review/guatemala-coe-nw2-sierra-roja-geisha-washed/",
+    "recommended_coffees": [
+      {
+        "name": "Guatemala Washed El Injerto EI05 Mocca",
+        "roaster": "Kakalove Cafe",
+        "rating": 96,
+        "roast": "Light",
+        "origin": "La Libertad, Huehuetenango Department, Guatemala",
+        "price": "NT $1200/4 ounces",
+        "review_date": "2022-10-01",
+        "review_url": "https://www.coffeereview.com/review/guatemala-washed-el-injerto-ei05-mocca/",
+        "tasting_note": "Exceptionally balanced, elegant, resonantly spice-toned. Red currant, butterscotch, hazelnut butter, honeysuckle, sandalwood in aroma and cup. Sweet-toned structure with sweetly tart, vivacious acidity; lively, creamy-smooth mouthfeel. The long, resonant finish carries over all the aromas and…"
+      },
+      {
+        "name": "Guatemala Santa Felisa Wild Yeast Natural Gesha",
+        "roaster": "Kakalove Cafe",
+        "rating": 96,
+        "roast": "Light",
+        "origin": "Acatenango growing region, central Guatemala",
+        "price": "NT $375/4 ounces",
+        "review_date": "2021-11-01",
+        "review_url": "https://www.coffeereview.com/review/guatemala-santa-felisa-wild-yeast-natural-gesha/",
+        "tasting_note": "Elegantly fruit-toned, complex, deeply layered. Lychee, macadamia nut, pink grapefruit zest, cocoa nib, plumeria in aroma and cup. Richly sweet-tart structure with bright, juicy acidity; supple, syrupy mouthfeel. The long, nuanced finish retains all of the flavor and aroma notes from the cup and…"
+      },
+      {
+        "name": "Guatemala COE-NW#2 Sierra Roja Geisha Washed",
+        "roaster": "GK Coffee",
+        "rating": 96,
+        "roast": "Medium-Light",
+        "origin": "San Cristobal Acasaguastlán, El Progreso, Sierra de las Minas, Guatemala",
+        "price": "NT $600/100 grams",
+        "review_date": "2021-09-01",
+        "review_url": "https://www.coffeereview.com/review/guatemala-coe-nw2-sierra-roja-geisha-washed/",
+        "tasting_note": "Complex, multi-layered, richly floral-toned. Lilac, rose hips, tangerine zest, Marcona almond, cocoa nib in aroma and cup. Balanced, high-toned structure with lyrically vibrant acidity; plush, very syrupy mouthfeel. Long, lingering, flavor-saturated finish that carries through on the promise of the…"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "question": "I need an espresso blend that holds up well with milk — lattes and cappuccinos. What do you suggest?",
+    "criteria": {
+      "type": "espresso blend",
+      "use_case": "milk drinks"
+    },
+    "answer": "These espresso blends are specifically noted to shine in milk drinks:\n\n1. **Bull Demon King** by Simon Hsieh Aroma Roast Coffees — rated 96/100, Medium-Dark roast, from Colombia; Peru; Rwanda; Ethiopia. Dark chocolate, Concord grape, scorched sugarcane, sandalwood, wisteria in aroma and small cup. Viscous, syrupy mouthfeel; richly… (~NT $550/8 ounces)\n   Read the full review: https://www.coffeereview.com/review/bull-demon-king/\n\n2. **British Style Espresso Blend** by Cozy House Coffee — rated 95/100, Medium roast, from Panama; Honduras; Ethiopia. Juicy, richly sweet-tart. Pomegranate, dark chocolate, amber, almond butter, pomelo in aroma and small cup. Very syrupy mouthfeel; long… (~NT $500/227 grams)\n   Read the full review: https://www.coffeereview.com/review/british-style-espresso-blend/\n\n3. **Golden Parrot Blend** by Kakalove Cafe — rated 95/100, Medium roast, from Guatemala; Colombia; Ethiopia. Complex, multilayered, cerebral. Dark chocolate, petrichor, ripe pluot, tiger lily, pink peppercorn in aroma and small cup. Lush, syrupy… (~NT $210/8 ounces)\n   Read the full review: https://www.coffeereview.com/review/golden-parrot-blend/",
+    "recommended_coffees": [
+      {
+        "name": "Bull Demon King",
+        "roaster": "Simon Hsieh Aroma Roast Coffees",
+        "rating": 96,
+        "roast": "Medium-Dark",
+        "origin": "Colombia; Peru; Rwanda; Ethiopia",
+        "price": "NT $550/8 ounces",
+        "review_date": "2021-08-01",
+        "review_url": "https://www.coffeereview.com/review/bull-demon-king/",
+        "tasting_note": "Dark chocolate, Concord grape, scorched sugarcane, sandalwood, wisteria in aroma and small cup. Viscous, syrupy mouthfeel; richly chocolaty, sweetly smoky finish with floral depth. In three parts milk, decadent perfection: layers of undulating chocolate, wisteria and scorched sugarcane carry far…"
+      },
+      {
+        "name": "British Style Espresso Blend",
+        "roaster": "Cozy House Coffee",
+        "rating": 95,
+        "roast": "Medium",
+        "origin": "Panama; Honduras; Ethiopia",
+        "price": "NT $500/227 grams",
+        "review_date": "2022-04-01",
+        "review_url": "https://www.coffeereview.com/review/british-style-espresso-blend/",
+        "tasting_note": "Juicy, richly sweet-tart. Pomegranate, dark chocolate, amber, almond butter, pomelo in aroma and small cup. Very syrupy mouthfeel; long, lingering, flavor-saturated finish. The tart-leaning structure stands up in cappuccino-scaled milk without sacrificing rich dark chocolate notes."
+      },
+      {
+        "name": "Golden Parrot Blend",
+        "roaster": "Kakalove Cafe",
+        "rating": 95,
+        "roast": "Medium",
+        "origin": "Guatemala; Colombia; Ethiopia",
+        "price": "NT $210/8 ounces",
+        "review_date": "2021-08-01",
+        "review_url": "https://www.coffeereview.com/review/golden-parrot-blend/",
+        "tasting_note": "Complex, multilayered, cerebral. Dark chocolate, petrichor, ripe pluot, tiger lily, pink peppercorn in aroma and small cup. Lush, syrupy mouthfeel; crisp, rich-toned finish. Layers of aroma and flavor in three parts milk, from sweet pluot and dark chocolate to spice-toned tiger lily and pink…"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "question": "I want something bursting with tropical fruit flavor — pineapple, mango, that kind of thing.",
+    "criteria": {
+      "flavor_notes": [
+        "tropical fruit",
+        "pineapple",
+        "mango",
+        "guava"
+      ]
+    },
+    "answer": "For big tropical fruit character — pineapple, guava, mango — try these:\n\n1. **Kenya Karindundu AA Small Lot Reserve** by Dragonfly Coffee Roasters — rated 97/100, Medium-Light roast, from Nyeri growing region, south-central Kenya. Lush, deeply floral, resonantly tropical. Plumeria, coconut, dark chocolate, tamarind, frankincense in aroma and cup. The structure is… (~$18.00/12 ounces)\n   Read the full review: https://www.coffeereview.com/review/kenya-karindundu-aa-small-lot-reserve/\n\n2. **Port of Mokha Yemen JSP** by Plat Coffee Roastery — rated 97/100, Medium roast, from Al Hayma growing region, Al Kharijiyah District, Sana’a Governorate, Yemen. Deeply sweet, complex, vibrantly rich. Dark chocolate, deep fruit notes (guava, raspberry jam, pineapple), aromatic orchid, frankincense… (~$60.00/100 grams)\n   Read the full review: https://www.coffeereview.com/review/port-of-mokha-yemen-jsp/\n\n3. **Mama Cata Mokkita** by Paradise Roasters — rated 97/100, Medium-Light roast, from Boquete growing region, western Panama. Aromatically other-worldly, resoundingly juicy. Caramelized pineapple, aromatic orchid, pistachio, raw chocolate, oolong tea in aroma and… (~$150.00/4 ounces)\n   Read the full review: https://www.coffeereview.com/review/mama-cata-mokkita-2/",
+    "recommended_coffees": [
+      {
+        "name": "Kenya Karindundu AA Small Lot Reserve",
+        "roaster": "Dragonfly Coffee Roasters",
+        "rating": 97,
+        "roast": "Medium-Light",
+        "origin": "Nyeri growing region, south-central Kenya",
+        "price": "$18.00/12 ounces",
+        "review_date": "2019-02-01",
+        "review_url": "https://www.coffeereview.com/review/kenya-karindundu-aa-small-lot-reserve/",
+        "tasting_note": "Lush, deeply floral, resonantly tropical. Plumeria, coconut, dark chocolate, tamarind, frankincense in aroma and cup. The structure is superbly balanced among sweet, savory and tart, with juicy-bright acidity. Plush, syrupy mouthfeel. The seemingly eternal finish sustains all of the flavor notes…"
+      },
+      {
+        "name": "Port of Mokha Yemen JSP",
+        "roaster": "Plat Coffee Roastery",
+        "rating": 97,
+        "roast": "Medium",
+        "origin": "Al Hayma growing region, Al Kharijiyah District, Sana’a Governorate, Yemen",
+        "price": "$60.00/100 grams",
+        "review_date": "2019-11-01",
+        "review_url": "https://www.coffeereview.com/review/port-of-mokha-yemen-jsp/",
+        "tasting_note": "Deeply sweet, complex, vibrantly rich. Dark chocolate, deep fruit notes (guava, raspberry jam, pineapple), aromatic orchid, frankincense, cedar-toned tobacco in aroma and cup. The acidity, while not bright, is enveloped in an elaborate and balanced structure with deep composure; mouthfeel is full…"
+      },
+      {
+        "name": "Mama Cata Mokkita",
+        "roaster": "Paradise Roasters",
+        "rating": 97,
+        "roast": "Medium-Light",
+        "origin": "Boquete growing region, western Panama",
+        "price": "$150.00/4 ounces",
+        "review_date": "2021-11-01",
+        "review_url": "https://www.coffeereview.com/review/mama-cata-mokkita-2/",
+        "tasting_note": "Aromatically other-worldly, resoundingly juicy. Caramelized pineapple, aromatic orchid, pistachio, raw chocolate, oolong tea in aroma and cup. Sweet-savory-tart structure with gently bright acidity; deep, syrupy mouthfeel. Flavor-laden finish with especially impressive fruit and florals."
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "question": "Any recommendations for a spice-toned Sumatra or other Indonesian coffee?",
+    "criteria": {
+      "flavor_notes": [
+        "spice"
+      ],
+      "origin": "Sumatra/Indonesia"
+    },
+    "answer": "These Sumatra/Indonesian coffees bring out classic spice-toned character:\n\n1. **Barokah Honey Sumatra** by JBC Coffee Roasters — rated 95/100, Medium-Light roast, from Gunung Tujuh, Kerinci, Sumatra, Indonesia. Spice-toned, complex, deep. Baking spices, dates, blood orange, cedar, brown sugar in aroma and cup. Sweet structure with bright, lively… (~$19.00/12 ounces)\n   Read the full review: https://www.coffeereview.com/review/barokah-honey-sumatra/\n\n2. **Pantan Musara Sumatra** by JBC Coffee Roasters — rated 94/100, Medium-Light roast, from Aceh Province, Sumatra, Indonesia. Richly spice- and fruit-toned. Nectarine, clove, narcissus, cocoa nib, cedar in aroma and cup. Brightly sweet structure with vibrant, juicy… (~$21.00/12 ounces)\n   Read the full review: https://www.coffeereview.com/review/pantan-musara-sumatra-2/\n\n3. **Whiskey Dreams Moka Java** by Old Soul Co. — rated 94/100, Medium-Light roast, from Indonesia; Ethiopia. Sweetly spice-toned, gently fermenty. Dark chocolate, fennel, raspberry jam, whiskey barrel, lemon balm in aroma and cup. Brightly sweet… (~$18.00/12 ounces)\n   Read the full review: https://www.coffeereview.com/review/whiskey-dreams-moka-java/",
+    "recommended_coffees": [
+      {
+        "name": "Barokah Honey Sumatra",
+        "roaster": "JBC Coffee Roasters",
+        "rating": 95,
+        "roast": "Medium-Light",
+        "origin": "Gunung Tujuh, Kerinci, Sumatra, Indonesia",
+        "price": "$19.00/12 ounces",
+        "review_date": "2022-03-01",
+        "review_url": "https://www.coffeereview.com/review/barokah-honey-sumatra/",
+        "tasting_note": "Spice-toned, complex, deep. Baking spices, dates, blood orange, cedar, brown sugar in aroma and cup. Sweet structure with bright, lively acidity; crisp, creamy mouthfeel. Long, resonant, lingering, integrated finish."
+      },
+      {
+        "name": "Pantan Musara Sumatra",
+        "roaster": "JBC Coffee Roasters",
+        "rating": 94,
+        "roast": "Medium-Light",
+        "origin": "Aceh Province, Sumatra, Indonesia",
+        "price": "$21.00/12 ounces",
+        "review_date": "2022-08-01",
+        "review_url": "https://www.coffeereview.com/review/pantan-musara-sumatra-2/",
+        "tasting_note": "Richly spice- and fruit-toned. Nectarine, clove, narcissus, cocoa nib, cedar in aroma and cup. Brightly sweet structure with vibrant, juicy acidity; full, syrupy-smooth mouthfeel. The balanced finish leads with notes of cocoa nib and nectarine, supported by clove, cedar and a hint of narcissus."
+      },
+      {
+        "name": "Whiskey Dreams Moka Java",
+        "roaster": "Old Soul Co.",
+        "rating": 94,
+        "roast": "Medium-Light",
+        "origin": "Indonesia; Ethiopia",
+        "price": "$18.00/12 ounces",
+        "review_date": "2022-02-01",
+        "review_url": "https://www.coffeereview.com/review/whiskey-dreams-moka-java/",
+        "tasting_note": "Sweetly spice-toned, gently fermenty. Dark chocolate, fennel, raspberry jam, whiskey barrel, lemon balm in aroma and cup. Brightly sweet with juicy acidity; plush, creamy mouthfeel. The resonant finish centers around notes of whiskey-toned raspberry and oak."
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "question": "I'd like to try some real Kona coffee from Hawaii. What are the best ones?",
+    "criteria": {
+      "origin": "Kona, Hawaii"
+    },
+    "answer": "Here are three excellent 100% Kona coffees from Hawaii's Big Island:\n\n1. **100% Kona SL-28** by Hula Daddy Kona Coffee — rated 97/100, Medium-Light roast, from Holualoa, North Kona growing district, “Big Island” of Hawaii. Spectacularly sweet and hugely aromatic. Meyer lemon marmalade, cedar, pistachio, guava, jasmine in aroma and cup. Crisply sweet/tart and… (~$74.95/8 ounces)\n   Read the full review: https://www.coffeereview.com/review/100-kona-sl-28/\n\n2. **Kahiko** by Hula Daddy Kona Coffee — rated 96/100, Medium-Light roast, from Holualoa, North Kona growing district, “Big Island” of Hawai’i. Richly chocolaty, harmoniously juicy and bright. Dark chocolate fudge, pomelo, star jasmine, cedar, marjoram in aroma and cup. Sweet-savory… (~$47.95/8 ounces)\n   Read the full review: https://www.coffeereview.com/review/kahiko/\n\n3. **Karen J Kona Red Bourbon** by Hula Daddy Kona Coffee — rated 96/100, Medium-Light roast, from Holualoa, North Kona growing district, “Big Island” of Hawai’i. Deep-toned, complexly layered, vibrantly aromatic. Black cherry, honeysuckle, cocoa nib, sugar cane, lemon balm in aroma and cup. Richly… (~$49.95/8 ounces)\n   Read the full review: https://www.coffeereview.com/review/karen-j-kona-red-bourbon-4/",
+    "recommended_coffees": [
+      {
+        "name": "100% Kona SL-28",
+        "roaster": "Hula Daddy Kona Coffee",
+        "rating": 97,
+        "roast": "Medium-Light",
+        "origin": "Holualoa, North Kona growing district, “Big Island” of Hawaii",
+        "price": "$74.95/8 ounces",
+        "review_date": "2017-11-01",
+        "review_url": "https://www.coffeereview.com/review/100-kona-sl-28/",
+        "tasting_note": "Spectacularly sweet and hugely aromatic. Meyer lemon marmalade, cedar, pistachio, guava, jasmine in aroma and cup. Crisply sweet/tart and massively juicy in structure; plush, buoyant mouthfeel. The juicy structure and complex aromatics persist in a long, lingering finish."
+      },
+      {
+        "name": "Kahiko",
+        "roaster": "Hula Daddy Kona Coffee",
+        "rating": 96,
+        "roast": "Medium-Light",
+        "origin": "Holualoa, North Kona growing district, “Big Island” of Hawai’i",
+        "price": "$47.95/8 ounces",
+        "review_date": "2022-09-01",
+        "review_url": "https://www.coffeereview.com/review/kahiko/",
+        "tasting_note": "Richly chocolaty, harmoniously juicy and bright. Dark chocolate fudge, pomelo, star jasmine, cedar, marjoram in aroma and cup. Sweet-savory structure with complex, bittersweet acidity; full, creamy mouthfeel. Resonant, long, flavor-laden finish."
+      },
+      {
+        "name": "Karen J Kona Red Bourbon",
+        "roaster": "Hula Daddy Kona Coffee",
+        "rating": 96,
+        "roast": "Medium-Light",
+        "origin": "Holualoa, North Kona growing district, “Big Island” of Hawai’i",
+        "price": "$49.95/8 ounces",
+        "review_date": "2022-08-01",
+        "review_url": "https://www.coffeereview.com/review/karen-j-kona-red-bourbon-4/",
+        "tasting_note": "Deep-toned, complexly layered, vibrantly aromatic. Black cherry, honeysuckle, cocoa nib, sugar cane, lemon balm in aroma and cup. Richly bittersweet structure with tart, juicy acidity; crisp, satiny mouthfeel. Very long, nuanced, resonant finish."
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "question": "I love sweet, vanilla, dessert-like coffee notes. What should I look for?",
+    "criteria": {
+      "flavor_notes": [
+        "vanilla",
+        "sweet",
+        "dessert-like"
+      ]
+    },
+    "answer": "These coffees are noted specifically for vanilla and sweet, dessert-like notes:\n\n1. **Panama Abu Natural ASD Geisha BOP GN11** by Kakalove Cafe — rated 96/100, Medium-Light roast, from Boquete growing region, western Panama. Provocative in structure, richly sweet-savory, tangy. Pineapple kefir, vanilla, cocoa nib, aromatic orchid, fresh-cut fir in aroma and cup… (~NT $1200/4 ounces)\n   Read the full review: https://www.coffeereview.com/review/panama-abu-natural-asd-geisha-bop-gn11/\n\n2. **David Mburu Kenya** by Coava Coffee Roasters — rated 96/100, Light roast, from Kiambu County, south-central Kenya. Deep, complex, richly sweet-savory. Vanilla orchid, toasted coconut, fine musk, dried fig, dark caramel in aroma and cup. Elegant… (~$15.00/250 grams)\n   Read the full review: https://www.coffeereview.com/review/david-mburu-kenya/\n\n3. **Yemen Sheba Auction Lot 1: Wadi Al Mahjr** by Euphora Coffee — rated 95/100, Medium-Light roast, from Al Mahjr, Al Hayma District, Yemen. Focused, gently bright, complex. Dried goji berry, vanilla bean, clementine, baking chocolate, fresh-cut oak, lemon verbena in aroma and… (~NT $500/4 ounces)\n   Read the full review: https://www.coffeereview.com/review/yemen-sheba-auction-lot-1-wadi-al-mahjr/",
+    "recommended_coffees": [
+      {
+        "name": "Panama Abu Natural ASD Geisha BOP GN11",
+        "roaster": "Kakalove Cafe",
+        "rating": 96,
+        "roast": "Medium-Light",
+        "origin": "Boquete growing region, western Panama",
+        "price": "NT $1200/4 ounces",
+        "review_date": "2020-11-01",
+        "review_url": "https://www.coffeereview.com/review/panama-abu-natural-asd-geisha-bop-gn11/",
+        "tasting_note": "Provocative in structure, richly sweet-savory, tangy. Pineapple kefir, vanilla, cocoa nib, aromatic orchid, fresh-cut fir in aroma and cup. Sweet-savory structure with high-toned acidity; lightly syrupy, very viscous mouthfeel. The finish consolidates to notes of vanilla, cocoa and tangy pineapple."
+      },
+      {
+        "name": "David Mburu Kenya",
+        "roaster": "Coava Coffee Roasters",
+        "rating": 96,
+        "roast": "Light",
+        "origin": "Kiambu County, south-central Kenya",
+        "price": "$15.00/250 grams",
+        "review_date": "2017-12-01",
+        "review_url": "https://www.coffeereview.com/review/david-mburu-kenya/",
+        "tasting_note": "Deep, complex, richly sweet-savory. Vanilla orchid, toasted coconut, fine musk, dried fig, dark caramel in aroma and cup. Elegant, savory-leaning structure with bright, juicy acidity; plush, velvety mouthfeel. The resonant, flavor-laden finish is centered around floral-toned fruit, with supporting…"
+      },
+      {
+        "name": "Yemen Sheba Auction Lot 1: Wadi Al Mahjr",
+        "roaster": "Euphora Coffee",
+        "rating": 95,
+        "roast": "Medium-Light",
+        "origin": "Al Mahjr, Al Hayma District, Yemen",
+        "price": "NT $500/4 ounces",
+        "review_date": "2021-10-01",
+        "review_url": "https://www.coffeereview.com/review/yemen-sheba-auction-lot-1-wadi-al-mahjr/",
+        "tasting_note": "Focused, gently bright, complex. Dried goji berry, vanilla bean, clementine, baking chocolate, fresh-cut oak, lemon verbena in aroma and cup. Balanced structure (sweet, tart, savory) with richly pungent but juicy acidity; plushly syrupy mouthfeel. Deep and multi-layered in the finish."
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "question": "I try to only buy certified organic and fair trade coffee. What are some highly-rated options?",
+    "criteria": {
+      "certification": [
+        "organic",
+        "fair trade"
+      ]
+    },
+    "answer": "These are certified organic and fair trade, and all rate highly:\n\n1. **Ethiopia Sidama Telamo FTO Natural** by Souvenir Coffee — rated 95/100, Medium-Light roast, from Sidamo (also Sidama) growing region, south-central Ethiopia. Delicate, high-toned, elegantly fruit-driven. Wild strawberry, tangerine zest, cocoa nib, sandalwood, thyme in aroma and cup. Bright… (~$23.00/12 ounces)\n   Read the full review: https://www.coffeereview.com/review/ethiopia-sidama-telamo-fto-natural/\n\n2. **DR Congo FTO Bourbon SOPACDI** by Dragonfly Coffee Roasters — rated 94/100, Medium-Light roast, from Kalehe, South Kivu Province, Democratic Republic of the Congo. Richly savory, deeply sweet. Ginger blossom, almond brittle, pear, fresh, moist forest notes, wildflower honey in aroma and cup. Structured… (~$18.00/12 ounces)\n   Read the full review: https://www.coffeereview.com/review/dr-congo-fto-bourbon-sopacdi/\n\n3. **Organic Dulce de Guatemala** by Paradise Roasters — rated 93/100, Medium-Light roast, from Huehuetenango growing region, Guatemala. Spice-toned, richly sweet. Honeysuckle, pistachio, baking spices, apricot, molasses in aroma and cup. Sweet-savory in structure with… (~$11.95/12 ounces)\n   Read the full review: https://www.coffeereview.com/review/organic-dulce-de-guatemala/",
+    "recommended_coffees": [
+      {
+        "name": "Ethiopia Sidama Telamo FTO Natural",
+        "roaster": "Souvenir Coffee",
+        "rating": 95,
+        "roast": "Medium-Light",
+        "origin": "Sidamo (also Sidama) growing region, south-central Ethiopia",
+        "price": "$23.00/12 ounces",
+        "review_date": "2020-12-01",
+        "review_url": "https://www.coffeereview.com/review/ethiopia-sidama-telamo-fto-natural/",
+        "tasting_note": "Delicate, high-toned, elegantly fruit-driven. Wild strawberry, tangerine zest, cocoa nib, sandalwood, thyme in aroma and cup. Bright, sweetly tart structure with juicy acidity; silky-smooth, lilting mouthfeel. The resonant finish is saturated with flavor notes from aroma and cup in harmonious…"
+      },
+      {
+        "name": "DR Congo FTO Bourbon SOPACDI",
+        "roaster": "Dragonfly Coffee Roasters",
+        "rating": 94,
+        "roast": "Medium-Light",
+        "origin": "Kalehe, South Kivu Province, Democratic Republic of the Congo",
+        "price": "$18.00/12 ounces",
+        "review_date": "2018-06-01",
+        "review_url": "https://www.coffeereview.com/review/dr-congo-fto-bourbon-sopacdi/",
+        "tasting_note": "Richly savory, deeply sweet. Ginger blossom, almond brittle, pear, fresh, moist forest notes, wildflower honey in aroma and cup. Structured balance among sweet, tart and savory tastes; crisp, velvety mouthfeel. The honey-toned finish leads with ginger blossom in the short and notes of pear and…"
+      },
+      {
+        "name": "Organic Dulce de Guatemala",
+        "roaster": "Paradise Roasters",
+        "rating": 93,
+        "roast": "Medium-Light",
+        "origin": "Huehuetenango growing region, Guatemala",
+        "price": "$11.95/12 ounces",
+        "review_date": "2018-08-01",
+        "review_url": "https://www.coffeereview.com/review/organic-dulce-de-guatemala/",
+        "tasting_note": "Spice-toned, richly sweet. Honeysuckle, pistachio, baking spices, apricot, molasses in aroma and cup. Sweet-savory in structure with balanced, lively acidity; plump, syrupy mouthfeel. The resonant finish leads with notes of apricot and honeysuckle in the short, rounding to spice-toned pistachio in…"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "question": "What are the single highest-rated, most acclaimed coffees in your database?",
+    "criteria": {
+      "ranking": "top rated overall"
+    },
+    "answer": "These are the highest-rated coffees in the entire dataset — a perfect-adjacent 98/100:\n\n1. **GW01 Finca Sophia Olympus Geisha** by GK Coffee — rated 98/100, Medium-Light roast, from Nueva Suiza, Chiriquí, Panama. Graceful, polished, exquisitely floral. Lavender, vanilla bean, bergamot, cocoa nib, lychee in aroma and cup. Delicate, vivid… (~NT $5,000/20 grams)\n   Read the full review: https://www.coffeereview.com/review/gw01-finca-sophia-olympus-geisha/\n\n2. **Finca Sophia Gesha Washed** by Equator Coffees — rated 98/100, Medium-Light roast, from Nueva Suiza, Chiriquí, Panama. Subtly powerful, harmoniously integrated, complete. Pineapple, nectarine, complex florals, cocoa nib, roasted pine nut in aroma and cup… (~$50.00/4 ounces)\n   Read the full review: https://www.coffeereview.com/review/finca-sophia-gesha-washed/\n\n3. **Elida Estate Geisha Green-Tip Natural** by Dragonfly Coffee Roasters — rated 98/100, Medium-Light roast, from Boquete growing region, western Panama. Vast yet intimate in its layered intricacy: complete and perfectly balanced. Complex flowers (citrus blossom, ginger blossom, aromatic… (~$100.00/21 grams)\n   Read the full review: https://www.coffeereview.com/review/elida-estate-geisha-green-tip-natural/",
+    "recommended_coffees": [
+      {
+        "name": "GW01 Finca Sophia Olympus Geisha",
+        "roaster": "GK Coffee",
+        "rating": 98,
+        "roast": "Medium-Light",
+        "origin": "Nueva Suiza, Chiriquí, Panama",
+        "price": "NT $5,000/20 grams",
+        "review_date": "2020-11-01",
+        "review_url": "https://www.coffeereview.com/review/gw01-finca-sophia-olympus-geisha/",
+        "tasting_note": "Graceful, polished, exquisitely floral. Lavender, vanilla bean, bergamot, cocoa nib, lychee in aroma and cup. Delicate, vivid, multi-layered structure with elegantly sweet-tart acidity; very silky, buoyant mouthfeel. Elongated, richly floral, complex finish."
+      },
+      {
+        "name": "Finca Sophia Gesha Washed",
+        "roaster": "Equator Coffees",
+        "rating": 98,
+        "roast": "Medium-Light",
+        "origin": "Nueva Suiza, Chiriquí, Panama",
+        "price": "$50.00/4 ounces",
+        "review_date": "2020-11-01",
+        "review_url": "https://www.coffeereview.com/review/finca-sophia-gesha-washed/",
+        "tasting_note": "Subtly powerful, harmoniously integrated, complete. Pineapple, nectarine, complex florals, cocoa nib, roasted pine nut in aroma and cup. Stunningly bright and expressive structure with very balanced acidity. Silky, buoyant mouthfeel. A deep, very long finish retains the grace and complexity of the…"
+      },
+      {
+        "name": "Elida Estate Geisha Green-Tip Natural",
+        "roaster": "Dragonfly Coffee Roasters",
+        "rating": 98,
+        "roast": "Medium-Light",
+        "origin": "Boquete growing region, western Panama",
+        "price": "$100.00/21 grams",
+        "review_date": "2019-10-01",
+        "review_url": "https://www.coffeereview.com/review/elida-estate-geisha-green-tip-natural/",
+        "tasting_note": "Vast yet intimate in its layered intricacy: complete and perfectly balanced. Complex flowers (citrus blossom, ginger blossom, aromatic orchid), bright, fresh fruit (pear, peach, tangerine), sweet cocoa, sandalwood, a hint of candycap mushroom in aroma and cup. In structure, juicy and lyrically…"
+      }
+    ]
+  }
+]
+
+
