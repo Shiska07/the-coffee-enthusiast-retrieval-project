@@ -59,14 +59,25 @@ retrieved context — no reranking, relevance grading, or retry logic yet. This
 intentionally "boring" baseline exists as a working reference point that every later
 improvement gets measured against.
 
+## Re-ranking & Groundedness Grading
+
+8. `src/coffee_rag/grading/reranker.py` : re-scores the retrieved candidates against the
+   query with a cross-encoder (`cross-encoder/ms-marco-MiniLM-L6-v2`) and keeps the top-k,
+   because a cross-encoder reads the query and document together and judges relevance
+   more precisely than embedding similarity alone. It's small (~22.7M params) and cheap
+   enough to run on CPU for every query.
+9. `src/coffee_rag/grading/hallucination_grader.py` : checks whether the generated answer
+   is supported by the retrieved context, cheapest check first. A local MiniCheck model
+   (Flan-T5-Large) scores P(supported). Answers scoring ≥ 0.65 are accepted, answers
+   below 0.35 are flagged as likely hallucinations, and only the uncertain middle band
+   goes to `gpt-4.1-mini` as an LLM judge. This keeps API calls rare.
+
+
 ## Upcoming Implementations
 
 Roughly in this order:
 
-- a cross-encoder(ms-marco-MiniLM-L6-v2) for re-ranking retrieved documents
-- a local hallucination grader(Minicheck) for checking response groundedness with an
-  LLM(gpt-4.1-mini) as a judge API call fallback for low-confidence answers 
-- an evaluation harness (RAGAS metrics against a curated question set) to measure
+- cross-encoder and hallucination grader wired into the end-to-end pipeline; LangGraph  graph.
   retrieval and answer quality before adding more complexity
 - a web search fallback, domain-restricted to coffee-related sources, for questions the
   review dataset can't answer
